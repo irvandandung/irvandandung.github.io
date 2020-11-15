@@ -2,22 +2,27 @@
 <!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]-->
 <!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" <![endif]-->
 <!--[if IE 8]><html class="no-js lt-ie9" <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
 
 {% include head.html %}
 
-<body>	
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KGBV6VC" height="0" width="0"
+         style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    {% include header.html %}
+    <div id="buttonUp"></div>
+    <div class="content">
+        <div class="container">
+            {{ content }}
+        </div>
+    </div>
+    <!-- end .content -->
 
-   {% include header.html %}
-   <div id="buttonUp"></div>
-   <div class="content">
-      <div class="container">
-         {{ content }}
-      </div>
-   </div><!-- end .content -->
-
-   {% include footer.html %}
-   {% include scripts.html %}
+    {% include footer.html %} {% include scripts.html %}
 
 </body>
 
