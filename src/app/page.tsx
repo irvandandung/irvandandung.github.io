@@ -79,33 +79,27 @@ export default function Page() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
             {/* Left decorative elements - Hidden on mobile */}
-            <div className="hidden md:flex flex-col justify-between relative h-80 pr-8">
-              {/* Top section - Border squares */}
-              <div className="relative h-20">
-                <div className="absolute top-0 left-0 w-20 h-20 border border-primary/20"></div>
-              </div>
+            <div className="hidden md:block relative h-96">
+              {/* Top-left border box */}
+              <div className="absolute top-0 left-0 w-20 h-20 border-2 border-primary/40"></div>
+              
+              {/* Middle-left border box */}
+              <div className="absolute top-1/3 left-8 w-24 h-24 border-2 border-primary/40"></div>
+              
+              {/* Bottom-left border box */}
+              <div className="absolute bottom-0 left-0 w-20 h-20 border-2 border-primary/40"></div>
 
-              {/* Middle section - Pixelated shapes spread out */}
-              <div className="relative h-40 flex items-center justify-between">
-                {/* Left pixelated square cluster */}
-                <div className="absolute left-0 top-10">
-                  <PixelatedSquares />
-                </div>
-                
-                {/* Center triangle */}
-                <div className="absolute left-1/2 transform -translate-x-1/2 top-0">
-                  <PixelatedTriangle />
-                </div>
-                
-                {/* Right diamond */}
-                <div className="absolute right-0 bottom-0">
-                  <PixelatedDiamond />
-                </div>
+              {/* Pixelated decorations - smaller and contained */}
+              <div className="absolute top-8 left-32">
+                <PixelatedSquares />
               </div>
-
-              {/* Bottom section - Border rectangle */}
-              <div className="relative h-20">
-                <div className="absolute bottom-0 left-12 w-24 h-24 border border-primary/20"></div>
+              
+              <div className="absolute top-1/2 left-16 transform -translate-y-1/2">
+                <PixelatedTriangle />
+              </div>
+              
+              <div className="absolute bottom-24 right-0">
+                <PixelatedDiamond />
               </div>
             </div>
 
