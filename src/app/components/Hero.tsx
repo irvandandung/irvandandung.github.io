@@ -45,8 +45,10 @@ export function Hero() {
 
           <div className="pt-2 sm:pt-4">
             <div className="badge inline-flex items-center gap-2">
-              <span className="w-2 h-2 bg-primary"></span>
+              <div className="w-3 h-3 border border-accent-purple"></div>
+              <span className="text-accent-purple">⇆</span>
               <span className="text-xs sm:text-sm">{t.pages.home.hero.status}</span>
+              <span className="text-accent-purple">→</span>
             </div>
           </div>
         </div>
