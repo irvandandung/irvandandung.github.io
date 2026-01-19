@@ -53,17 +53,17 @@ export default function Page() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
             {t.pages.home.projects.items.map((project: any, idx: number) => (
               <div key={idx} className="project-card">
-                <div className={`${['bg-orange-600/20', 'bg-green-600/20', 'bg-purple-600/20'][idx]} h-24 sm:h-32 rounded mb-4 flex items-center justify-center`}>
-                  <span className="text-lg sm:text-2xl font-bold text-gray-300">{['CN', 'PX', 'KA'][idx]}</span>
+                <div className={`${['bg-orange-600/20', 'bg-green-600/20', 'bg-purple-600/20'][idx]} h-24 sm:h-32 mb-4 flex items-center justify-center`}>
+                   <span className="text-lg sm:text-2xl font-bold text-gray-300">{['CN', 'PX', 'KA'][idx]}</span>
                 </div>
                 <h3 className="text-base sm:text-xl font-semibold mb-2">{project.title}</h3>
                 <p className="text-gray-300 text-xs sm:text-sm mb-3 sm:mb-4">{project.description}</p>
                 <div className="flex flex-wrap gap-2">
-                  {project.tags.map((tag: string, i: number) => (
-                    <span key={i} className="px-2 sm:px-3 py-1 bg-dark-tertiary text-gray-300 text-xs rounded border border-dark-tertiary">
-                      {tag}
-                    </span>
-                  ))}
+                   {project.tags.map((tag: string, i: number) => (
+                     <span key={i} className="badge">
+                       {tag}
+                     </span>
+                   ))}
                 </div>
               </div>
             ))}
@@ -79,9 +79,9 @@ export default function Page() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
             {/* Left decorative elements - Hidden on mobile */}
             <div className="hidden md:block relative h-64">
-              <div className="absolute top-0 left-0 w-20 h-20 border border-primary/20 rounded"></div>
-              <div className="absolute top-24 left-12 w-16 h-16 border border-primary/20 rounded"></div>
-              <div className="absolute bottom-0 left-20 w-24 h-24 border border-primary/20 rounded"></div>
+              <div className="absolute top-0 left-0 w-20 h-20 border border-primary/20"></div>
+              <div className="absolute top-24 left-12 w-16 h-16 border border-primary/20"></div>
+              <div className="absolute bottom-0 left-20 w-24 h-24 border border-primary/20"></div>
             </div>
 
             {/* Skills Table */}
@@ -148,7 +148,7 @@ export default function Page() {
 
           {/* Right image placeholder */}
           <div className="relative h-64 sm:h-80 md:h-96 flex items-center justify-center">
-            <div className="w-full bg-gradient-to-br from-primary/20 to-primary/5 rounded-lg flex items-center justify-center">
+            <div className="w-full bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center">
               <p className="text-gray-400 text-sm">[About Image]</p>
             </div>
           </div>

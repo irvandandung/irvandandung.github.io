@@ -15,7 +15,7 @@ export function LanguageSwitcher() {
     return (
       <select
         disabled
-        className="bg-dark-secondary text-gray-300 border border-dark-tertiary rounded px-2 md:px-3 py-1 text-xs md:text-sm hover:border-primary transition cursor-pointer opacity-50"
+        className="bg-dark-secondary text-gray-300 border border-white px-2 md:px-3 py-1 text-xs md:text-sm hover:border-white transition cursor-pointer opacity-50"
       >
         <option>EN</option>
       </select>
@@ -26,7 +26,7 @@ export function LanguageSwitcher() {
     <select
       value={locale}
       onChange={(e) => setLocale(e.target.value as 'en' | 'id')}
-      className="bg-dark-secondary text-gray-300 border border-dark-tertiary rounded px-2 md:px-3 py-1 text-xs md:text-sm hover:border-primary transition cursor-pointer"
+      className="bg-dark-secondary text-white border border-white px-2 md:px-3 py-1 text-xs md:text-sm hover:border-gray-300 transition cursor-pointer font-semibold"
     >
       <option value="en">EN</option>
       <option value="id">ID</option>

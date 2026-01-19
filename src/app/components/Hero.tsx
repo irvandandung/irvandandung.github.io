@@ -13,8 +13,8 @@ export function Hero() {
     <section className="pt-24 sm:pt-32 pb-12 sm:pb-20 px-4 sm:px-6 md:pl-20">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12 items-center relative">
         {/* Decorative elements - Hidden on mobile */}
-        <div className="hidden md:block absolute top-20 right-32 w-32 h-32 border border-primary/20 rounded"></div>
-        <div className="hidden md:block absolute top-40 right-20 w-20 h-20 border border-primary/20 rounded"></div>
+        <div className="hidden md:block absolute top-20 right-32 w-32 h-32 border border-primary/20"></div>
+        <div className="hidden md:block absolute top-40 right-20 w-20 h-20 border border-primary/20"></div>
         
         {/* Left content */}
         <div className="space-y-4 sm:space-y-6 z-10">
@@ -39,13 +39,13 @@ export function Hero() {
             {t.pages.home.hero.description}
           </p>
 
-          <button className="px-4 sm:px-6 py-2 border border-primary text-primary hover:bg-primary/10 rounded transition text-sm sm:text-base">
+          <button className="px-4 sm:px-6 py-2 border border-primary text-primary hover:bg-primary/10 transition text-sm sm:text-base">
             {t.pages.home.hero.cta}
           </button>
 
           <div className="pt-2 sm:pt-4">
             <div className="badge inline-flex items-center gap-2">
-              <span className="w-2 h-2 bg-primary rounded-full"></span>
+              <span className="w-2 h-2 bg-primary"></span>
               <span className="text-xs sm:text-sm">{t.pages.home.hero.status}</span>
             </div>
           </div>
@@ -53,7 +53,7 @@ export function Hero() {
 
         {/* Right image placeholder */}
         <div className="relative h-64 sm:h-80 md:h-96 flex items-end justify-end">
-          <div className="w-full bg-gradient-to-br from-primary/30 to-primary/5 rounded-lg flex items-center justify-center">
+          <div className="w-full bg-gradient-to-br from-primary/30 to-primary/5 flex items-center justify-center">
             <div className="text-center">
               <p className="text-gray-500 text-sm">[Hero Image]</p>
             </div>
@@ -64,7 +64,7 @@ export function Hero() {
             {[...Array(4)].map((_, i) => (
               <div key={i} className="flex gap-1">
                 {[...Array(5)].map((_, j) => (
-                  <div key={j} className="w-1 h-1 bg-primary/40 rounded-full"></div>
+                  <div key={j} className="w-1 h-1 bg-primary/40"></div>
                 ))}
               </div>
             ))}
