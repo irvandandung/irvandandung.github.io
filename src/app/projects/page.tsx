@@ -34,20 +34,17 @@ export default function ProjectsPage() {
               <a
                 key={idx}
                 href={project.link}
-                className="project-card group cursor-pointer relative"
+                className="project-card group cursor-pointer"
               >
                 <div className={`${colorMap[idx]} h-24 sm:h-32 mb-4 flex items-center justify-center group-hover:brightness-110 transition`}>
                    <span className="text-lg sm:text-2xl font-bold text-gray-300">{iconMap[idx]}</span>
                 </div>
-                <h3 className="text-base sm:text-xl font-semibold mb-2 flex items-center justify-between">
-                  {project.title}
-                  <span className="text-accent-purple opacity-0 group-hover:opacity-100 transition text-sm">→</span>
-                </h3>
+                <h3 className="text-base sm:text-xl font-semibold mb-2">{project.title}</h3>
                 <p className="text-gray-300 text-xs sm:text-sm mb-3 sm:mb-4">{project.description}</p>
                 <div className="flex flex-wrap gap-2">
                    {project.tags.map((tag: string, i: number) => (
                      <span key={i} className="badge">
-                       <span className="text-accent-purple">⇆</span> {tag}
+                       {tag}
                      </span>
                    ))}
                 </div>

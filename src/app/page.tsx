@@ -53,19 +53,16 @@ export default function Page() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
             {t.pages.home.projects.items.map((project: any, idx: number) => (
-              <div key={idx} className="project-card group">
+              <div key={idx} className="project-card">
                 <div className={`${['bg-orange-600/20', 'bg-green-600/20', 'bg-purple-600/20'][idx]} h-24 sm:h-32 mb-4 flex items-center justify-center`}>
                    <span className="text-lg sm:text-2xl font-bold text-gray-300">{['CN', 'PX', 'KA'][idx]}</span>
                 </div>
-                <h3 className="text-base sm:text-xl font-semibold mb-2 flex items-center justify-between">
-                  {project.title}
-                  <span className="text-accent-purple opacity-0 group-hover:opacity-100 transition text-sm">→</span>
-                </h3>
+                <h3 className="text-base sm:text-xl font-semibold mb-2">{project.title}</h3>
                 <p className="text-gray-300 text-xs sm:text-sm mb-3 sm:mb-4">{project.description}</p>
                 <div className="flex flex-wrap gap-2">
                    {project.tags.map((tag: string, i: number) => (
                      <span key={i} className="badge">
-                       <span className="text-accent-purple">⇆</span> {tag}
+                       {tag}
                      </span>
                    ))}
                 </div>
