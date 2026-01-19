@@ -25,12 +25,11 @@ export function LanguageSwitcher() {
   return (
     <select
       value={locale}
-      onChange={(e) => setLocale(e.target.value as 'en' | 'ru' | 'ua')}
+      onChange={(e) => setLocale(e.target.value as 'en' | 'id')}
       className="bg-dark-secondary text-gray-300 border border-dark-tertiary rounded px-2 md:px-3 py-1 text-xs md:text-sm hover:border-primary transition cursor-pointer"
     >
       <option value="en">EN</option>
-      <option value="ru">RU</option>
-      <option value="ua">UA</option>
+      <option value="id">ID</option>
     </select>
   );
 }

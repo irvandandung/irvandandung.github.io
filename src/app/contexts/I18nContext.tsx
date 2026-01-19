@@ -2,15 +2,13 @@
 
 import React, { createContext, useContext, useState, useEffect } from 'react';
 import en from '@/locales/en.json';
-import ru from '@/locales/ru.json';
-import ua from '@/locales/ua.json';
+import id from '@/locales/id.json';
 
-type Locale = 'en' | 'ru' | 'ua';
+type Locale = 'en' | 'id';
 
 const locales = {
   en,
-  ru,
-  ua,
+  id,
 };
 
 interface I18nContextType {

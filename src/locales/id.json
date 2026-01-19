@@ -1,0 +1,137 @@
+{
+  "header": {
+    "home": "beranda",
+    "projects": "proyek",
+    "about": "tentang-saya"
+  },
+  "nav": {
+    "contactMe": "Hubungi saya !!"
+  },
+  "pages": {
+    "home": {
+      "hero": {
+        "title1": "Muhamad Irvan Dandung adalah",
+        "title2": "Full-Stack Developer",
+        "title3": "",
+        "title4": "",
+        "description": "3+ tahun pengalaman membangun infrastruktur yang dapat diskalakan dan membuat aplikasi web dan mobile yang cepat serta aman",
+        "cta": "Hubungi saya !!",
+        "status": "Saat ini tersedia untuk peluang baru"
+      },
+      "quote": {
+        "text": "Bangun solusi yang dapat diskalakan, tulis kode yang bersih, buat produk yang cepat & aman",
+        "author": "Muhamad Irvan Dandung"
+      },
+      "projects": {
+        "title": "proyek",
+        "viewAll": "Lihat semua →",
+        "items": [
+          {
+            "title": "ChertNodes",
+            "description": "Platform hosting server Minecraft",
+            "tags": ["Live ⇆", "Tersimpan"]
+          },
+          {
+            "title": "ProtectX",
+            "description": "Bot anti-crash Discord",
+            "tags": ["Live ⇆"]
+          },
+          {
+            "title": "Kahoot Answers Viewer",
+            "description": "Dapatkan jawaban untuk kuis kahoot Anda",
+            "tags": ["Live ⇆"]
+          }
+        ]
+      },
+      "skills": {
+        "title": "keterampilan",
+        "languages": "Bahasa Pemrograman",
+        "databases": "Database",
+        "tools": "Alat",
+        "frameworks": "Framework",
+        "other": "Lainnya",
+        "items": {
+          "languages": ["PHP", "Java", "Kotlin", "TypeScript", "Go", "Python"],
+          "databases": ["PostgreSQL", "MySQL", "MongoDB", "Redis"],
+          "tools": ["Docker", "Kubernetes", "Linux", "Git", "VSCode"],
+          "frameworks": ["React", "Next.js", "Spring Boot", "Laravel"]
+        }
+      },
+      "about": {
+        "title": "tentang-saya",
+        "intro": "Halo, saya Muhamad Irvan Dandung!",
+        "description1": "Saya adalah Senior Software Developer dengan 3+ tahun pengalaman dalam membangun aplikasi yang robust dan scalable. Saya spesialis dalam teknologi backend (PHP, Java, Kotlin, Go) dan pengembangan frontend modern (TypeScript, React).",
+        "description2": "Saya bersemangat dalam membangun infrastruktur yang cepat, aman, dan scalable. Saya memiliki pengalaman langsung dengan Docker, Kubernetes, AWS, dan GCP. Saya selalu mengeksplorasi teknologi dan praktik terbaik baru.",
+        "readMore": "Baca selengkapnya →"
+      },
+      "contacts": {
+        "title": "kontak",
+        "interested": "Saya tertarik dengan peluang rekayasa perangkat lunak. Baik itu",
+        "description": "waktu penuh, freelance, atau kolaborasi, silakan hubungi saya",
+        "messageHere": "Pesan saya di sini",
+        "discord": "Discord: irvandandung",
+        "email": "Email: irvandandung1@gmail.com"
+      }
+    },
+    "projects": {
+      "title": "proyek",
+      "description": "Berikut adalah beberapa proyek terbaru saya",
+      "items": [
+        {
+          "title": "ChertNodes",
+          "description": "Platform hosting server Minecraft dengan fitur manajemen lanjutan",
+          "tags": ["Live ⇆", "Tersimpan"]
+        },
+        {
+          "title": "ProtectX",
+          "description": "Bot anti-crash Discord yang melindungi server dari serangan berbahaya",
+          "tags": ["Live ⇆"]
+        },
+        {
+          "title": "Kahoot Answers Viewer",
+          "description": "Dapatkan jawaban untuk kuis kahoot Anda secara real-time",
+          "tags": ["Live ⇆"]
+        },
+        {
+          "title": "Proyek Empat",
+          "description": "Proyek tambahan dengan fitur menarik",
+          "tags": ["Pengembangan"]
+        },
+        {
+          "title": "Proyek Lima",
+          "description": "Proyek hebat lainnya untuk portofolio",
+          "tags": ["Perencanaan"]
+        },
+        {
+          "title": "Proyek Enam",
+          "description": "Proyek eksperimental yang mengeksplorasi teknologi baru",
+          "tags": ["Live ⇆", "Diarsipkan"]
+        }
+      ]
+    },
+    "aboutMe": {
+      "title": "tentang-saya",
+      "greeting": "Halo, saya Muhamad Irvan Dandung!",
+      "bio1": "Saya adalah Senior Software Developer dengan 3+ tahun pengalaman profesional. Saya spesialis dalam membangun infrastruktur yang scalable dan membuat aplikasi yang cepat, aman di berbagai platform.",
+      "bio2": "Keahlian saya mencakup pengembangan full-stack dengan fondasi yang kuat di teknologi backend (PHP, Java, Kotlin, Go) dan frontend (TypeScript, React). Saya mahir dalam containerization (Docker, Kubernetes) dan platform cloud (AWS, GCP).",
+      "bio3": "Saya bersemangat dalam menulis kode yang bersih, menerapkan prinsip OOP, dan membangun solusi struktur data yang efisien. Ketika tidak coding, saya senang mengeksplorasi teknologi baru dan berkontribusi pada komunitas developer.",
+      "downloadResume": "Unduh Resume →",
+      "education": "Pendidikan",
+      "selfTaught": "Belajar Mandiri & Kursus Online",
+      "onlineCourses": "Pembelajaran & Pengembangan Berkelanjutan",
+      "modernWeb": "Teknologi & Keterampilan",
+      "modernWebDesc": "PHP, Java, Kotlin, Go, TypeScript, React, Docker, Kubernetes, AWS, GCP",
+      "experience": "Pengalaman",
+      "freelanceDeveloper": "Senior Software Developer",
+      "freelanceDates": "2021 - Sekarang",
+      "webProjects": "Pengembangan Full-Stack",
+      "webProjectsDesc": "Beberapa proyek dikerjakan di platform web dan aplikasi mobile"
+    }
+  },
+  "footer": {
+    "media": "media",
+    "description": "Silakan hubungi saya untuk kolaborasi atau sekedar salam ramah!",
+    "copyright": "© Hak Cipta 2024. Dibuat oleh Muhamad Irvan Dandung",
+    "email": "irvandandung1@gmail.com"
+  }
+}
