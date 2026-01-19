@@ -21,7 +21,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  @apply bg-primary rounded-full;
+  @apply bg-primary;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -45,7 +45,7 @@ a {
 
 /* Decorative elements */
 .geometric-square {
-  @apply absolute border border-white/30 rounded;
+  @apply absolute border border-white/30;
 }
 
 .geometric-dots {
@@ -77,12 +77,12 @@ a {
 
 /* Badge styling */
 .badge {
-  @apply px-3 py-1 bg-white/10 text-white text-xs rounded border border-white/50;
+  @apply px-3 py-1 bg-white/20 text-white text-sm font-bold border border-white;
 }
 
 /* Project card styling */
 .project-card {
-  @apply bg-dark-secondary border border-white rounded-lg p-6 hover:border-white transition;
+  @apply bg-dark-secondary border border-white p-6 hover:border-white transition;
 }
 
 /* Skills table styling */
