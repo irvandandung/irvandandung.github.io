@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-fira-code, 'Fira Code', monospace);
+}
+
+body {
+  @apply bg-dark-bg text-gray-200 font-mono;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-dark-bg;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-primary rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-primary-dark;
+}
+
+/* Smooth transitions */
+* {
+  @apply transition-colors duration-300;
+}
+
+/* Code blocks */
+code {
+  @apply font-mono text-sm;
+}
+
+/* Links */
+a {
+  @apply text-primary hover:text-primary-light;
+}
+
+/* Decorative elements */
+.geometric-square {
+  @apply absolute border border-primary/30 rounded;
+}
+
+.geometric-dots {
+  @apply absolute;
+  background-image: radial-gradient(circle, currentColor 1px, transparent 1px);
+  background-size: 20px 20px;
+  opacity: 0.3;
+}
+
+/* Hero section styling */
+.hero-gradient {
+  background: linear-gradient(135deg, rgba(199, 120, 221, 0.1) 0%, rgba(199, 120, 221, 0.05) 100%);
+}
+
+/* Quote styling */
+.quote-box {
+  @apply border-l-4 border-primary pl-6 py-4;
+}
+
+/* Section titles */
+.section-title {
+  @apply text-3xl font-bold mb-8 relative;
+}
+
+.section-title::before {
+  content: '#';
+  @apply text-primary mr-2;
+}
+
+/* Badge styling */
+.badge {
+  @apply px-3 py-1 bg-primary/20 text-primary text-xs rounded border border-primary/30;
+}
+
+/* Project card styling */
+.project-card {
+  @apply bg-dark-secondary border border-dark-tertiary rounded-lg p-6 hover:border-primary transition;
+}
+
+/* Skills table styling */
+.skills-table {
+  @apply w-full border-collapse;
+}
+
+.skills-table th,
+.skills-table td {
+  @apply px-4 py-3 text-left border border-dark-tertiary;
+}
+
+.skills-table th {
+  @apply bg-dark-secondary text-primary font-semibold;
+}
+
+.skills-table td {
+  @apply text-gray-300;
+}
+
+/* Left sidebar */
+.sidebar {
+  @apply fixed left-0 top-0 h-screen flex flex-col items-center justify-center gap-8;
+}
+
+.sidebar-icon {
+  @apply w-6 h-6 text-gray-400 hover:text-primary transition cursor-pointer;
+}

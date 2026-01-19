@@ -1,0 +1,137 @@
+{
+  "header": {
+    "home": "дім",
+    "projects": "проекти",
+    "about": "про мене"
+  },
+  "nav": {
+    "contactMe": "Зв'яжіться зі мною !!"
+  },
+  "pages": {
+    "home": {
+       "hero": {
+         "title1": "Мухамад Ірван Дандунг — це",
+         "title2": "Full-Stack розробник",
+         "title3": "",
+         "title4": "",
+         "description": "3+ років досвіду в створенні масштабованої інфраструктури та розробці швидких і безпечних додатків",
+         "cta": "Зв'яжіться зі мною !!",
+         "status": "В даний час шукаю нові можливості"
+       },
+       "quote": {
+         "text": "Створюйте масштабовані рішення, пишіть чистий код, робіть продукти швидкими та безпечними",
+         "author": "Мухамад Ірван Дандунг"
+       },
+      "projects": {
+        "title": "проекти",
+        "viewAll": "Переглянути все →",
+        "items": [
+          {
+            "title": "ChertNodes",
+            "description": "Хостинг серверів Minecraft",
+            "tags": ["Live ⇆", "Кешовано"]
+          },
+          {
+            "title": "ProtectX",
+            "description": "Discord антикрах бот",
+            "tags": ["Live ⇆"]
+          },
+          {
+            "title": "Kahoot Answers Viewer",
+            "description": "Отримайте відповіді на вашу вікторину Kahoot",
+            "tags": ["Live ⇆"]
+          }
+        ]
+      },
+       "skills": {
+         "title": "навички",
+         "languages": "Мови",
+         "databases": "Бази даних",
+         "tools": "Інструменти",
+         "frameworks": "Фреймворки",
+         "other": "Інше",
+         "items": {
+           "languages": ["PHP", "Java", "Kotlin", "TypeScript", "Go", "Python"],
+           "databases": ["PostgreSQL", "MySQL", "MongoDB", "Redis"],
+           "tools": ["Docker", "Kubernetes", "Linux", "Git", "VSCode"],
+           "frameworks": ["React", "Next.js", "Spring Boot", "Laravel"]
+         }
+       },
+       "about": {
+         "title": "про мене",
+         "intro": "Привіт, я Мухамад Ірван Дандунг!",
+         "description1": "Я старший розробник з 3+ років досвіду у створенні надійних та масштабованих додатків. Спеціалізуюсь на backend-технологіях (PHP, Java, Kotlin, Go) та сучасній frontend-розробці (TypeScript, React).",
+         "description2": "Я зацікавлений у створенні швидкої, безпечної та масштабованої інфраструктури. Досвід роботи з Docker, Kubernetes, AWS та GCP. Постійно вивчаю нові технології.",
+         "readMore": "Дізнатися більше →"
+       },
+       "contacts": {
+         "title": "контакти",
+         "interested": "Я зацікавлений у можливостях розробки ПО. Повна занятість,",
+         "description": "фріланс або співпраця — зв'яжіться зі мною",
+         "messageHere": "Напишіть мені тут",
+         "discord": "Discord: irvandandung",
+         "email": "Email: irvandandung1@gmail.com"
+       }
+    },
+    "projects": {
+      "title": "проекти",
+      "description": "Ось деякі з моїх останніх проектів",
+      "items": [
+        {
+          "title": "ChertNodes",
+          "description": "Платформа хостингу серверів Minecraft з розширеними можливостями управління",
+          "tags": ["Live ⇆", "Кешовано"]
+        },
+        {
+          "title": "ProtectX",
+          "description": "Discord антикрах бот, який захищає серери від шкідливих атак",
+          "tags": ["Live ⇆"]
+        },
+        {
+          "title": "Kahoot Answers Viewer",
+          "description": "Отримайте відповіді на вашу вікторину Kahoot в реальному часі",
+          "tags": ["Live ⇆"]
+        },
+        {
+          "title": "Проект чотири",
+          "description": "Додатковий проект з цікавими функціями",
+          "tags": ["Розроблення"]
+        },
+        {
+          "title": "Проект п'ять",
+          "description": "Ще один чудовий проект для портфоліо",
+          "tags": ["Планування"]
+        },
+        {
+          "title": "Проект шість",
+          "description": "Експериментальний проект, що досліджує нові технології",
+          "tags": ["Live ⇆", "Архівовано"]
+        }
+      ]
+    },
+     "aboutMe": {
+       "title": "про мене",
+       "greeting": "Привіт, я Мухамад Ірван Дандунг!",
+       "bio1": "Я старший розробник з 3+ років професійного досвіду. Спеціалізуюсь на створенні масштабованої інфраструктури та розробці швидких, безпечних додатків на різних платформах.",
+       "bio2": "Мій досвід охоплює full-stack розробку з міцним фундаментом у backend (PHP, Java, Kotlin, Go) та frontend (TypeScript, React) технологіях. Досвідчений у контейнеризації (Docker, Kubernetes) та хмарних платформах (AWS, GCP).",
+       "bio3": "Я зацікавлений у написанні чистого коду, застосуванні принципів ООП та розробці ефективних структур даних. У вільний час вивчаю нові технології та беру участь у спільноті розробників.",
+       "downloadResume": "Завантажити резюме →",
+       "education": "Освіта",
+       "selfTaught": "Самонавчання та онлайн-курси",
+       "onlineCourses": "Постійне навчання та розвиток",
+       "modernWeb": "Технології та навички",
+       "modernWebDesc": "PHP, Java, Kotlin, Go, TypeScript, React, Docker, Kubernetes, AWS, GCP",
+       "experience": "Досвід",
+       "freelanceDeveloper": "Старший розробник ПО",
+       "freelanceDates": "2021 - Теперішній час",
+       "webProjects": "Full-Stack розробка",
+       "webProjectsDesc": "Багато проектів реалізовано на веб-платформах та мобільних додатків"
+     }
+  },
+   "footer": {
+     "media": "медіа",
+     "description": "Не соромтесь звертатися до мене для співпраці або просто для дружної розмови!",
+     "copyright": "© Авторське право 2024. Створено Мухамадом Ірваном Дандунгом",
+     "email": "irvandandung1@gmail.com"
+   }
+}

@@ -1,0 +1,137 @@
+{
+  "header": {
+    "home": "home",
+    "projects": "projects",
+    "about": "about-me"
+  },
+  "nav": {
+    "contactMe": "Contact me !!"
+  },
+  "pages": {
+    "home": {
+       "hero": {
+         "title1": "Muhamad Irvan Dandung is a",
+         "title2": "Full-Stack Developer",
+         "title3": "",
+         "title4": "",
+         "description": "3+ years of experience building scalable infrastructure and creating fast, secure websites and mobile applications",
+         "cta": "Contact me !!",
+         "status": "Currently available for opportunities"
+       },
+       "quote": {
+         "text": "Build scalable solutions, write clean code, make fast & secure products",
+         "author": "Muhamad Irvan Dandung"
+       },
+      "projects": {
+        "title": "projects",
+        "viewAll": "View all →",
+        "items": [
+          {
+            "title": "ChertNodes",
+            "description": "Minecraft servers hosting",
+            "tags": ["Live ⇆", "Cached"]
+          },
+          {
+            "title": "ProtectX",
+            "description": "Discord anti-crash bot",
+            "tags": ["Live ⇆"]
+          },
+          {
+            "title": "Kahoot Answers Viewer",
+            "description": "Get answers to your kahoot quiz",
+            "tags": ["Live ⇆"]
+          }
+        ]
+      },
+       "skills": {
+         "title": "skills",
+         "languages": "Languages",
+         "databases": "Databases",
+         "tools": "Tools",
+         "frameworks": "Frameworks",
+         "other": "Other",
+         "items": {
+           "languages": ["PHP", "Java", "Kotlin", "TypeScript", "Go", "Python"],
+           "databases": ["PostgreSQL", "MySQL", "MongoDB", "Redis"],
+           "tools": ["Docker", "Kubernetes", "Linux", "Git", "VSCode"],
+           "frameworks": ["React", "Next.js", "Spring Boot", "Laravel"]
+         }
+       },
+       "about": {
+         "title": "about-me",
+         "intro": "Hello, I'm Muhamad Irvan Dandung!",
+         "description1": "I'm a Senior Software Developer with 3+ years of experience in building robust and scalable applications. I specialize in backend technologies (PHP, Java, Kotlin, Go) and modern frontend development (TypeScript, React).",
+         "description2": "I'm passionate about building fast, secure, and scalable infrastructure. I have hands-on experience with Docker, Kubernetes, AWS, and GCP. I'm always exploring new technologies and best practices.",
+         "readMore": "Read more →"
+       },
+       "contacts": {
+         "title": "contacts",
+         "interested": "I'm interested in software engineering opportunities. Whether it's",
+         "description": "full-time, freelance, or collaboration, feel free to reach out",
+         "messageHere": "Message me here",
+         "discord": "Discord: irvandandung",
+         "email": "Email: irvandandung1@gmail.com"
+       }
+    },
+    "projects": {
+      "title": "projects",
+      "description": "Here are some of my recent projects",
+      "items": [
+        {
+          "title": "ChertNodes",
+          "description": "Minecraft servers hosting platform with advanced management features",
+          "tags": ["Live ⇆", "Cached"]
+        },
+        {
+          "title": "ProtectX",
+          "description": "Discord anti-crash bot that protects servers from malicious attacks",
+          "tags": ["Live ⇆"]
+        },
+        {
+          "title": "Kahoot Answers Viewer",
+          "description": "Get answers to your kahoot quiz in real-time",
+          "tags": ["Live ⇆"]
+        },
+        {
+          "title": "Project Four",
+          "description": "Additional project with interesting features",
+          "tags": ["Development"]
+        },
+        {
+          "title": "Project Five",
+          "description": "Another awesome project for portfolio",
+          "tags": ["Planning"]
+        },
+        {
+          "title": "Project Six",
+          "description": "Experimental project exploring new technologies",
+          "tags": ["Live ⇆", "Archived"]
+        }
+      ]
+    },
+     "aboutMe": {
+       "title": "about-me",
+       "greeting": "Hello, I'm Muhamad Irvan Dandung!",
+       "bio1": "I'm a Senior Software Developer with 3+ years of professional experience. I specialize in building scalable infrastructure and creating fast, secure applications across multiple platforms.",
+       "bio2": "My expertise spans full-stack development with strong fundamentals in both backend (PHP, Java, Kotlin, Go) and frontend (TypeScript, React) technologies. I'm proficient with containerization (Docker, Kubernetes) and cloud platforms (AWS, GCP).",
+       "bio3": "I'm passionate about writing clean code, following OOP principles, and building data structure-efficient solutions. When I'm not coding, I enjoy exploring new technologies and contributing to the developer community.",
+       "downloadResume": "Download Resume →",
+       "education": "Education",
+       "selfTaught": "Self-taught & Online Learning",
+       "onlineCourses": "Continuous Learning & Growth",
+       "modernWeb": "Technologies & Skills",
+       "modernWebDesc": "PHP, Java, Kotlin, Go, TypeScript, React, Docker, Kubernetes, AWS, GCP",
+       "experience": "Experience",
+       "freelanceDeveloper": "Senior Software Developer",
+       "freelanceDates": "2021 - Present",
+       "webProjects": "Full-Stack Development",
+       "webProjectsDesc": "Multiple projects delivered across web and mobile platforms"
+     }
+  },
+   "footer": {
+     "media": "media",
+     "description": "Feel free to reach out for collaborations or just a friendly hello!",
+     "copyright": "© Copyright 2024. Made by Muhamad Irvan Dandung",
+     "email": "irvandandung1@gmail.com"
+   }
+}
