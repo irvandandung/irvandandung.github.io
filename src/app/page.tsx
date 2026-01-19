@@ -173,7 +173,7 @@ export default function Page() {
        <section id="projects" className="py-12 sm:py-20 px-4 sm:px-6 md:pl-20">
          <div className="max-w-7xl mx-auto">
            <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-8 sm:mb-12">
-             <h2 className="section-title mb-0 text-2xl sm:text-3xl">#{t.pages.home.projects.title}</h2>
+             <h2 className="section-title mb-0 text-2xl sm:text-3xl">{t.pages.home.projects.title}</h2>
              <Link href="/projects" className="text-primary hover:text-primary-light text-xs sm:text-sm whitespace-nowrap">
                {t.pages.home.projects.viewAll}
              </Link>
@@ -203,7 +203,7 @@ export default function Page() {
        {/* Skills Section */}
        <section className="py-12 sm:py-20 px-4 sm:px-6 md:pl-20">
          <div className="max-w-7xl mx-auto">
-           <h2 className="section-title text-2xl sm:text-3xl">#{t.pages.home.skills.title}</h2>
+           <h2 className="section-title text-2xl sm:text-3xl">{t.pages.home.skills.title}</h2>
 
            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
              {/* Left decorative elements - Hidden on mobile */}
@@ -259,7 +259,7 @@ export default function Page() {
        {/* About Section */}
        <section id="about" className="py-12 sm:py-20 px-4 sm:px-6 md:pl-20">
          <div className="max-w-7xl mx-auto">
-           <h2 className="section-title text-2xl sm:text-3xl">#{t.pages.home.about.title}</h2>
+           <h2 className="section-title text-2xl sm:text-3xl">{t.pages.home.about.title}</h2>
 
            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-12 items-center">
              <div className="space-y-3 sm:space-y-4 order-2 md:order-1">

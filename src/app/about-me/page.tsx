@@ -42,13 +42,13 @@ export default function AboutMePage() {
       <nav className="fixed top-0 right-0 left-0 z-50 backdrop-blur-sm bg-dark-bg/95 border-b border-dark-tertiary">
         <div className="max-w-7xl mx-auto px-4 md:px-6 py-4 flex justify-between items-center">
           <Link href="/" className="text-lg md:text-xl font-bold text-primary hover:text-primary-light flex items-center gap-2">
-            <span>⚫</span> <span className="hidden sm:inline">Elias</span>
+            <span>⚫</span> <span className="hidden sm:inline">MID</span>
           </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex gap-6 lg:gap-8 items-center">
             <Link href="/" className="text-sm lg:text-base text-gray-300 hover:text-primary transition">
-              Home
+              #Home
             </Link>
             <Link href="/projects" className="text-sm lg:text-base text-gray-300 hover:text-primary transition">
               #projects

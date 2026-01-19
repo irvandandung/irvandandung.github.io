@@ -45,13 +45,13 @@ export default function ProjectsPage() {
       <nav className="fixed top-0 right-0 left-0 z-50 backdrop-blur-sm bg-dark-bg/95 border-b border-dark-tertiary">
         <div className="max-w-7xl mx-auto px-4 md:px-6 py-4 flex justify-between items-center">
           <Link href="/" className="text-lg md:text-xl font-bold text-primary hover:text-primary-light flex items-center gap-2">
-            <span>⚫</span> <span className="hidden sm:inline">Elias</span>
+            <span>⚫</span> <span className="hidden sm:inline">MID</span>
           </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex gap-6 lg:gap-8 items-center">
             <Link href="/" className="text-sm lg:text-base text-gray-300 hover:text-primary transition">
-              Home
+              #Home
             </Link>
             <Link href="/projects" className="text-sm lg:text-base text-primary transition font-semibold">
               #projects
@@ -78,7 +78,7 @@ export default function ProjectsPage() {
           <div className="md:hidden bg-dark-secondary border-t border-dark-tertiary">
             <div className="px-4 py-4 space-y-4">
               <Link href="/" className="block text-gray-300 hover:text-primary transition">
-                Home
+                #Home
               </Link>
               <Link href="/projects" className="block text-primary transition font-semibold">
                 #projects
@@ -95,7 +95,7 @@ export default function ProjectsPage() {
       {/* Content */}
       <section className="pt-24 sm:pt-32 pb-12 sm:pb-20 px-4 sm:px-6 md:pl-20">
         <div className="max-w-7xl mx-auto">
-          <h1 className="section-title text-3xl sm:text-4xl md:text-5xl mb-12">#{t.pages.projects.title}</h1>
+          <h1 className="section-title text-3xl sm:text-4xl md:text-5xl mb-12">{t.pages.projects.title}</h1>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
             {t.pages.projects.items.map((project: any, idx: number) => (

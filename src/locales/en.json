@@ -53,8 +53,8 @@
          "items": {
            "languages": ["PHP", "Java", "Kotlin", "TypeScript", "Go", "Python"],
            "databases": ["PostgreSQL", "MySQL", "MongoDB", "Redis"],
-           "tools": ["Docker", "Kubernetes", "Linux", "Git", "VSCode"],
-           "frameworks": ["React", "Next.js", "Spring Boot", "Laravel"]
+           "tools": ["Docker", "Kubernetes", "Linux", "Git", "VSCode", "Node.js"],
+           "frameworks": ["React", "Next.js", "Spring Boot", "Laravel", "NestJS", "Express"]
          }
        },
        "about": {
