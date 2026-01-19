@@ -8,8 +8,13 @@ import { useI18n } from "@/app/contexts/I18nContext";
 
 export default function AboutMePage() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const { t } = useI18n();
+  const { t, isReady } = useI18n();
   useTitleAnimation('about-me');
+
+  // Prevent rendering until translations are ready (hydration safety)
+  if (!isReady || !t) {
+    return null;
+  }
 
   return (
     <main className="min-h-screen bg-dark-bg">

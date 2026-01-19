@@ -41,7 +41,7 @@ export function I18nProvider({ children }: { children: React.ReactNode }) {
       value={{
         locale,
         setLocale,
-        t: locales[locale],
+        t: locales[locale] || locales.en,
         isReady: mounted,
       }}
     >

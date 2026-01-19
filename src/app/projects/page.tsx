@@ -8,8 +8,13 @@ import { useI18n } from "@/app/contexts/I18nContext";
 
 export default function ProjectsPage() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const { t } = useI18n();
+  const { t, isReady } = useI18n();
   useTitleAnimation('projects');
+
+  // Prevent rendering until translations are ready (hydration safety)
+  if (!isReady || !t) {
+    return null;
+  }
 
   const colorMap = ['bg-orange-600/20', 'bg-green-600/20', 'bg-purple-600/20', 'bg-blue-600/20', 'bg-indigo-600/20', 'bg-pink-600/20'];
   const iconMap = ['CN', 'PX', 'KA', 'P4', 'P5', 'P6'];
