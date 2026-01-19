@@ -1,6 +1,7 @@
 'use client';
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 import { useI18n } from "@/app/contexts/I18nContext";
 
@@ -11,10 +12,16 @@ interface NavigationProps {
 
 export function Navigation({ mobileMenuOpen, setMobileMenuOpen }: NavigationProps) {
   const { t, isReady } = useI18n();
+  const pathname = usePathname();
 
   if (!isReady || !t) {
     return null;
   }
+
+  // Determine active page
+  const isHome = pathname === '/';
+  const isProjects = pathname === '/projects';
+  const isAbout = pathname === '/about-me';
 
   return (
     <>
@@ -49,13 +56,28 @@ export function Navigation({ mobileMenuOpen, setMobileMenuOpen }: NavigationProp
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex gap-6 lg:gap-8 items-center">
-            <Link href="/" className="text-sm lg:text-base text-primary transition font-semibold">
+            <Link 
+              href="/" 
+              className={`text-sm lg:text-base transition font-semibold ${
+                isHome ? 'text-primary' : 'text-gray-300 hover:text-primary'
+              }`}
+            >
               #home
             </Link>
-            <Link href="/projects" className="text-sm lg:text-base text-gray-300 hover:text-primary transition">
+            <Link 
+              href="/projects" 
+              className={`text-sm lg:text-base transition ${
+                isProjects ? 'text-primary font-semibold' : 'text-gray-300 hover:text-primary'
+              }`}
+            >
               #projects
             </Link>
-            <Link href="/about-me" className="text-sm lg:text-base text-gray-300 hover:text-primary transition">
+            <Link 
+              href="/about-me" 
+              className={`text-sm lg:text-base transition ${
+                isAbout ? 'text-primary font-semibold' : 'text-gray-300 hover:text-primary'
+              }`}
+            >
               #about-me
             </Link>
             <LanguageSwitcher />
@@ -76,13 +98,28 @@ export function Navigation({ mobileMenuOpen, setMobileMenuOpen }: NavigationProp
         {mobileMenuOpen && (
           <div className="md:hidden bg-dark-secondary border-t border-dark-tertiary">
             <div className="px-4 py-4 space-y-4">
-              <Link href="/" className="block text-primary transition font-semibold">
+              <Link 
+                href="/" 
+                className={`block transition font-semibold ${
+                  isHome ? 'text-primary' : 'text-gray-300 hover:text-primary'
+                }`}
+              >
                 #home
               </Link>
-              <Link href="/projects" className="block text-gray-300 hover:text-primary transition">
+              <Link 
+                href="/projects" 
+                className={`block transition ${
+                  isProjects ? 'text-primary font-semibold' : 'text-gray-300 hover:text-primary'
+                }`}
+              >
                 #projects
               </Link>
-              <Link href="/about-me" className="block text-gray-300 hover:text-primary transition">
+              <Link 
+                href="/about-me" 
+                className={`block transition ${
+                  isAbout ? 'text-primary font-semibold' : 'text-gray-300 hover:text-primary'
+                }`}
+              >
                 #about-me
               </Link>
               <LanguageSwitcher />
