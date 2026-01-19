@@ -57,7 +57,7 @@ a {
 
 /* Hero section styling */
 .hero-gradient {
-  background: linear-gradient(135deg, rgba(199, 120, 221, 0.1) 0%, rgba(199, 120, 221, 0.05) 100%);
+  background: none;
 }
 
 /* Quote styling */
