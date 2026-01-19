@@ -9,12 +9,12 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        primary: '#C778DD',
-        'primary-light': '#E8C4F0',
-        'primary-dark': '#A65BB8',
+        primary: '#FFFFFF',
+        'primary-light': '#F0F0F0',
+        'primary-dark': '#E0E0E0',
         'dark-bg': 'hsl(218 12% 18%)',
         'dark-secondary': '#242D3D',
-        'dark-tertiary': '#2D3A4F',
+        'dark-tertiary': '#FFFFFF',
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',

@@ -40,12 +40,12 @@ code {
 
 /* Links */
 a {
-  @apply text-primary hover:text-primary-light;
+  @apply text-white hover:text-gray-200;
 }
 
 /* Decorative elements */
 .geometric-square {
-  @apply absolute border border-primary/30 rounded;
+  @apply absolute border border-white/30 rounded;
 }
 
 .geometric-dots {
@@ -62,7 +62,7 @@ a {
 
 /* Quote styling */
 .quote-box {
-  @apply border-l-4 border-primary pl-6 py-4;
+  @apply border-l-4 border-white pl-6 py-4;
 }
 
 /* Section titles */
@@ -72,17 +72,17 @@ a {
 
 .section-title::before {
   content: '#';
-  @apply text-primary mr-2;
+  @apply text-white mr-2;
 }
 
 /* Badge styling */
 .badge {
-  @apply px-3 py-1 bg-primary/20 text-primary text-xs rounded border border-primary/30;
+  @apply px-3 py-1 bg-white/10 text-white text-xs rounded border border-white/50;
 }
 
 /* Project card styling */
 .project-card {
-  @apply bg-dark-secondary border border-dark-tertiary rounded-lg p-6 hover:border-primary transition;
+  @apply bg-dark-secondary border border-white rounded-lg p-6 hover:border-white transition;
 }
 
 /* Skills table styling */
@@ -92,11 +92,11 @@ a {
 
 .skills-table th,
 .skills-table td {
-  @apply px-4 py-3 text-left border border-dark-tertiary;
+  @apply px-4 py-3 text-left border border-white;
 }
 
 .skills-table th {
-  @apply bg-dark-secondary text-primary font-semibold;
+  @apply bg-dark-secondary text-white font-semibold;
 }
 
 .skills-table td {
@@ -109,5 +109,5 @@ a {
 }
 
 .sidebar-icon {
-  @apply w-6 h-6 text-gray-300 hover:text-primary transition cursor-pointer;
+  @apply w-6 h-6 text-gray-300 hover:text-white transition cursor-pointer;
 }
