@@ -29,13 +29,13 @@ export default function AboutMePage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-12 items-center">
             <div className="space-y-3 sm:space-y-4 order-2 md:order-1">
               <p className="text-gray-300 text-sm sm:text-base font-semibold">{t.pages.aboutMe.greeting}</p>
-              <p className="text-gray-400 leading-relaxed text-xs sm:text-sm md:text-base">
+              <p className="text-gray-300 leading-relaxed text-xs sm:text-sm md:text-base">
                 {t.pages.aboutMe.bio1}
               </p>
-              <p className="text-gray-400 leading-relaxed text-xs sm:text-sm md:text-base">
+              <p className="text-gray-300 leading-relaxed text-xs sm:text-sm md:text-base">
                 {t.pages.aboutMe.bio2}
               </p>
-              <p className="text-gray-400 leading-relaxed text-xs sm:text-sm md:text-base">
+              <p className="text-gray-300 leading-relaxed text-xs sm:text-sm md:text-base">
                 {t.pages.aboutMe.bio3}
               </p>
               <button className="px-4 sm:px-6 py-2 border border-primary text-primary hover:bg-primary/10 rounded transition text-xs sm:text-sm md:text-base">
@@ -46,7 +46,7 @@ export default function AboutMePage() {
             <div className="relative h-64 sm:h-80 md:h-96 order-1 md:order-2">
               <div className="w-full h-full bg-gradient-to-br from-primary/30 to-primary/5 rounded-lg flex items-center justify-center">
                 <div className="text-center">
-                  <p className="text-gray-500 text-sm">[About Image]</p>
+                  <p className="text-gray-400 text-sm">[About Image]</p>
                 </div>
               </div>
 
@@ -81,11 +81,11 @@ export default function AboutMePage() {
               <div className="space-y-4">
                 <div>
                   <p className="font-semibold text-sm sm:text-base">{t.pages.aboutMe.selfTaught}</p>
-                  <p className="text-gray-400 text-xs sm:text-sm">{t.pages.aboutMe.onlineCourses}</p>
+                  <p className="text-gray-300 text-xs sm:text-sm">{t.pages.aboutMe.onlineCourses}</p>
                 </div>
                 <div>
                   <p className="font-semibold text-sm sm:text-base">{t.pages.aboutMe.modernWeb}</p>
-                  <p className="text-gray-400 text-xs sm:text-sm">{t.pages.aboutMe.modernWebDesc}</p>
+                  <p className="text-gray-300 text-xs sm:text-sm">{t.pages.aboutMe.modernWebDesc}</p>
                 </div>
               </div>
             </div>
@@ -95,11 +95,11 @@ export default function AboutMePage() {
               <div className="space-y-4">
                 <div>
                   <p className="font-semibold text-sm sm:text-base">{t.pages.aboutMe.freelanceDeveloper}</p>
-                  <p className="text-gray-400 text-xs sm:text-sm">{t.pages.aboutMe.freelanceDates}</p>
+                  <p className="text-gray-300 text-xs sm:text-sm">{t.pages.aboutMe.freelanceDates}</p>
                 </div>
                 <div>
                   <p className="font-semibold text-sm sm:text-base">{t.pages.aboutMe.webProjects}</p>
-                  <p className="text-gray-400 text-xs sm:text-sm">{t.pages.aboutMe.webProjectsDesc}</p>
+                  <p className="text-gray-300 text-xs sm:text-sm">{t.pages.aboutMe.webProjectsDesc}</p>
                 </div>
               </div>
             </div>

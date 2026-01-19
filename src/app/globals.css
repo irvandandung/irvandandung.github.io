@@ -8,7 +8,7 @@ html {
 }
 
 body {
-  @apply bg-dark-bg text-gray-200 font-mono;
+  @apply bg-dark-bg text-gray-100 font-mono;
 }
 
 /* Custom scrollbar */
@@ -100,7 +100,7 @@ a {
 }
 
 .skills-table td {
-  @apply text-gray-300;
+  @apply text-gray-200;
 }
 
 /* Left sidebar */
@@ -109,5 +109,5 @@ a {
 }
 
 .sidebar-icon {
-  @apply w-6 h-6 text-gray-400 hover:text-primary transition cursor-pointer;
+  @apply w-6 h-6 text-gray-300 hover:text-primary transition cursor-pointer;
 }

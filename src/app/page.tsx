@@ -54,10 +54,10 @@ export default function Page() {
             {t.pages.home.projects.items.map((project: any, idx: number) => (
               <div key={idx} className="project-card">
                 <div className={`${['bg-orange-600/20', 'bg-green-600/20', 'bg-purple-600/20'][idx]} h-24 sm:h-32 rounded mb-4 flex items-center justify-center`}>
-                  <span className="text-lg sm:text-2xl font-bold text-gray-400">{['CN', 'PX', 'KA'][idx]}</span>
+                  <span className="text-lg sm:text-2xl font-bold text-gray-300">{['CN', 'PX', 'KA'][idx]}</span>
                 </div>
                 <h3 className="text-base sm:text-xl font-semibold mb-2">{project.title}</h3>
-                <p className="text-gray-400 text-xs sm:text-sm mb-3 sm:mb-4">{project.description}</p>
+                <p className="text-gray-300 text-xs sm:text-sm mb-3 sm:mb-4">{project.description}</p>
                 <div className="flex flex-wrap gap-2">
                   {project.tags.map((tag: string, i: number) => (
                     <span key={i} className="px-2 sm:px-3 py-1 bg-dark-tertiary text-gray-300 text-xs rounded border border-dark-tertiary">
@@ -135,10 +135,10 @@ export default function Page() {
             <div>
               <h2 className="section-title text-2xl sm:text-3xl">{t.pages.home.about.title}</h2>
             </div>
-            <p className="text-gray-400 text-sm sm:text-base">
+            <p className="text-gray-300 text-sm sm:text-base">
               {t.pages.home.about.description1}
             </p>
-            <p className="text-gray-400 text-sm sm:text-base">
+            <p className="text-gray-300 text-sm sm:text-base">
               {t.pages.home.about.description2}
             </p>
             <Link href="/about-me" className="inline-block text-primary hover:text-primary-light transition text-sm sm:text-base">
@@ -149,7 +149,7 @@ export default function Page() {
           {/* Right image placeholder */}
           <div className="relative h-64 sm:h-80 md:h-96 flex items-center justify-center">
             <div className="w-full bg-gradient-to-br from-primary/20 to-primary/5 rounded-lg flex items-center justify-center">
-              <p className="text-gray-500 text-sm">[About Image]</p>
+              <p className="text-gray-400 text-sm">[About Image]</p>
             </div>
           </div>
         </div>
@@ -160,7 +160,7 @@ export default function Page() {
         <div className="max-w-7xl mx-auto">
           <div className="max-w-2xl">
             <h2 className="section-title text-2xl sm:text-3xl">{t.pages.home.contacts.title}</h2>
-            <p className="text-gray-400 mt-4 sm:mt-6 text-sm sm:text-base">
+            <p className="text-gray-300 mt-4 sm:mt-6 text-sm sm:text-base">
               {t.pages.home.contacts.interested}{' '}
               <span className="text-primary">{t.pages.home.contacts.description}</span>
             </p>

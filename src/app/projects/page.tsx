@@ -37,10 +37,10 @@ export default function ProjectsPage() {
                 className="project-card group cursor-pointer"
               >
                 <div className={`${colorMap[idx]} h-24 sm:h-32 rounded mb-4 flex items-center justify-center group-hover:brightness-110 transition`}>
-                  <span className="text-lg sm:text-2xl font-bold text-gray-400">{iconMap[idx]}</span>
+                  <span className="text-lg sm:text-2xl font-bold text-gray-300">{iconMap[idx]}</span>
                 </div>
                 <h3 className="text-base sm:text-xl font-semibold mb-2">{project.title}</h3>
-                <p className="text-gray-400 text-xs sm:text-sm mb-3 sm:mb-4">{project.description}</p>
+                <p className="text-gray-300 text-xs sm:text-sm mb-3 sm:mb-4">{project.description}</p>
                 <div className="flex flex-wrap gap-2">
                   {project.tags.map((tag: string, i: number) => (
                     <span key={i} className="px-2 sm:px-3 py-1 bg-dark-tertiary text-gray-300 text-xs rounded border border-dark-tertiary">

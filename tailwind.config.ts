@@ -12,9 +12,9 @@ const config: Config = {
         primary: '#C778DD',
         'primary-light': '#E8C4F0',
         'primary-dark': '#A65BB8',
-        'dark-bg': '#0F1419',
-        'dark-secondary': '#16213E',
-        'dark-tertiary': '#1D2E4A',
+        'dark-bg': '#1A1F2E',
+        'dark-secondary': '#242D3D',
+        'dark-tertiary': '#2D3A4F',
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',

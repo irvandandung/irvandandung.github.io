@@ -35,7 +35,7 @@ export function Hero() {
             </h1>
           </div>
 
-          <p className="text-base sm:text-lg text-gray-400">
+          <p className="text-base sm:text-lg text-gray-300">
             {t.pages.home.hero.description}
           </p>
 
