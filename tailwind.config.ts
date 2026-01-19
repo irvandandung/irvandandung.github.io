@@ -12,6 +12,7 @@ const config: Config = {
         primary: '#FFFFFF',
         'primary-light': '#F0F0F0',
         'primary-dark': '#E0E0E0',
+        'accent-purple': '#C778DD',
         'dark-bg': 'hsl(218 12% 18%)',
         'dark-secondary': '#242D3D',
         'dark-tertiary': '#FFFFFF',

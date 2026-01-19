@@ -65,7 +65,7 @@ export function Navigation({ mobileMenuOpen, setMobileMenuOpen }: NavigationProp
                 isHome ? 'text-white' : 'text-gray-300 hover:text-white'
               }`}
             >
-              <span className="text-primary">#</span>home
+              <span className="text-accent-purple">#</span>home
             </Link>
             <Link 
               href="/projects" 
@@ -73,7 +73,7 @@ export function Navigation({ mobileMenuOpen, setMobileMenuOpen }: NavigationProp
                 isProjects ? 'text-white font-semibold' : 'text-gray-300 hover:text-white'
               }`}
             >
-              <span className="text-primary">#</span>projects
+              <span className="text-accent-purple">#</span>projects
             </Link>
             <Link 
               href="/about-me" 
@@ -81,7 +81,7 @@ export function Navigation({ mobileMenuOpen, setMobileMenuOpen }: NavigationProp
                 isAbout ? 'text-white font-semibold' : 'text-gray-300 hover:text-white'
               }`}
             >
-              <span className="text-primary">#</span>about-me
+              <span className="text-accent-purple">#</span>about-me
             </Link>
             <LanguageSwitcher />
           </div>
@@ -107,7 +107,7 @@ export function Navigation({ mobileMenuOpen, setMobileMenuOpen }: NavigationProp
                   isHome ? 'text-white' : 'text-gray-300 hover:text-white'
                 }`}
               >
-                <span className="text-primary">#</span>home
+                <span className="text-accent-purple">#</span>home
               </Link>
               <Link 
                 href="/projects" 
@@ -115,7 +115,7 @@ export function Navigation({ mobileMenuOpen, setMobileMenuOpen }: NavigationProp
                   isProjects ? 'text-white font-semibold' : 'text-gray-300 hover:text-white'
                 }`}
               >
-                <span className="text-primary">#</span>projects
+                <span className="text-accent-purple">#</span>projects
               </Link>
               <Link 
                 href="/about-me" 
@@ -123,7 +123,7 @@ export function Navigation({ mobileMenuOpen, setMobileMenuOpen }: NavigationProp
                   isAbout ? 'text-white font-semibold' : 'text-gray-300 hover:text-white'
                 }`}
               >
-                <span className="text-primary">#</span>about-me
+                <span className="text-accent-purple">#</span>about-me
               </Link>
               <LanguageSwitcher />
             </div>

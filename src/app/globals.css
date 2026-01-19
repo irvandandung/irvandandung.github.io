@@ -72,7 +72,7 @@ a {
 
 .section-title::before {
   content: '#';
-  @apply text-primary mr-2;
+  @apply text-accent-purple mr-2;
 }
 
 /* Badge styling */
