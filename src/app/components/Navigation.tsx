@@ -26,7 +26,7 @@ export function Navigation({ mobileMenuOpen, setMobileMenuOpen }: NavigationProp
   return (
     <>
       {/* Left Sidebar - Hidden on mobile */}
-      <aside className="sidebar hidden md:flex md:fixed flex-col">
+      <aside className="hidden md:flex md:fixed left-0 top-0 h-screen flex-col items-center justify-center gap-8">
         {/* Decorative line above icons */}
         <div className="w-[1px] h-20 bg-gradient-to-b from-transparent via-white to-transparent mb-8"></div>
         
