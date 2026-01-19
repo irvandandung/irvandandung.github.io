@@ -7,6 +7,7 @@ import { useI18n } from "./contexts/I18nContext";
 import { Navigation } from "./components/Navigation";
 import { Hero } from "./components/Hero";
 import { Footer } from "./components/Footer";
+import { PixelatedTriangle, PixelatedDiamond, PixelatedSquares } from "./components/Decorations";
 
 export default function Page() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -82,6 +83,17 @@ export default function Page() {
               <div className="absolute top-0 left-0 w-20 h-20 border border-primary/20"></div>
               <div className="absolute top-24 left-12 w-16 h-16 border border-primary/20"></div>
               <div className="absolute bottom-0 left-20 w-24 h-24 border border-primary/20"></div>
+              
+              {/* Pixelated decorations */}
+              <div className="absolute top-10 left-32">
+                <PixelatedTriangle />
+              </div>
+              <div className="absolute top-1/2 left-20">
+                <PixelatedDiamond />
+              </div>
+              <div className="absolute bottom-20 left-0">
+                <PixelatedSquares />
+              </div>
             </div>
 
             {/* Skills Table */}
