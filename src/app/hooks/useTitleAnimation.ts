@@ -12,7 +12,7 @@ export function useTitleAnimation(pageName: string) {
 
     function animation(timestamp: number) {
       if (lastTimestep + frameInterval < timestamp) {
-        document.title = `${steps[step]} ${pageName} | Elias`;
+        document.title = `${steps[step]} ${pageName} | Dandung`;
         step = (step + 1) % steps.length;
         lastTimestep = timestamp;
       }

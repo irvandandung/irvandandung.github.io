@@ -44,9 +44,26 @@ export default function AboutMePage() {
             </div>
 
             <div className="relative h-64 sm:h-80 md:h-96 order-1 md:order-2">
-              <div className="w-full h-full bg-gradient-to-br from-primary/30 to-primary/5 rounded-lg flex items-center justify-center">
-                <div className="text-center">
-                  <p className="text-gray-400 text-sm">[About Image]</p>
+              <div className="w-full h-full bg-gradient-to-br from-accent-purple/20 via-primary/10 to-accent-purple/5 flex items-center justify-center overflow-hidden relative">
+                {/* Developer profile section */}
+                <div className="w-4/5 h-4/5 border-2 border-accent-purple/40 bg-dark-bg/40 flex flex-col items-center justify-center gap-4 p-6">
+                  {/* Avatar placeholder */}
+                  <div className="w-20 h-20 rounded-full border-2 border-accent-purple/60 flex items-center justify-center bg-accent-purple/10">
+                    <span className="text-3xl">👨‍💻</span>
+                  </div>
+                  
+                  {/* Name and title */}
+                  <div className="text-center">
+                    <p className="text-sm font-semibold text-primary">Muhamad Irvan</p>
+                    <p className="text-xs text-accent-purple">Senior Developer</p>
+                  </div>
+                  
+                  {/* Skills badges */}
+                  <div className="flex flex-wrap gap-2 justify-center mt-2">
+                    <span className="px-2 py-1 text-xs border border-accent-purple/40 text-accent-purple bg-accent-purple/5">React</span>
+                    <span className="px-2 py-1 text-xs border border-accent-purple/40 text-accent-purple bg-accent-purple/5">Node</span>
+                    <span className="px-2 py-1 text-xs border border-accent-purple/40 text-accent-purple bg-accent-purple/5">TypeScript</span>
+                  </div>
                 </div>
               </div>
 

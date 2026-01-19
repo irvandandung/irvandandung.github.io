@@ -51,11 +51,41 @@ export function Hero() {
           </div>
         </div>
 
-        {/* Right image placeholder */}
-        <div className="relative h-64 sm:h-80 md:h-96 flex items-end justify-end">
-          <div className="w-full bg-gradient-to-br from-primary/30 to-primary/5 flex items-center justify-center">
-            <div className="text-center">
-              <p className="text-gray-500 text-sm">[Hero Image]</p>
+        {/* Right image - Developer illustration */}
+        <div className="relative h-64 sm:h-80 md:h-96 flex items-center justify-center">
+          <div className="w-full h-full bg-gradient-to-br from-accent-purple/20 via-primary/10 to-accent-purple/5 flex items-center justify-center overflow-hidden relative">
+            {/* Decorative code window */}
+            <div className="w-4/5 h-3/4 border-2 border-accent-purple/40 flex flex-col">
+              {/* Window header */}
+              <div className="bg-accent-purple/20 border-b border-accent-purple/40 px-4 py-2 flex items-center gap-2">
+                <div className="w-3 h-3 rounded-full bg-accent-purple/60"></div>
+                <div className="w-3 h-3 rounded-full bg-accent-purple/40"></div>
+                <div className="w-3 h-3 rounded-full bg-accent-purple/20"></div>
+                <span className="text-xs text-accent-purple/60 ml-2">portfolio.tsx</span>
+              </div>
+              
+              {/* Code content */}
+              <div className="flex-1 p-4 space-y-2 text-xs font-mono">
+                <div className="text-accent-purple">{'<Hero />'}</div>
+                <div className="text-gray-300 ml-4">
+                  <span className="text-primary">{`name`}</span>
+                  <span className="text-gray-400">=</span>
+                  <span className="text-green-400">"Muhamad Irvan"</span>
+                </div>
+                <div className="text-gray-300 ml-4">
+                  <span className="text-primary">{`role`}</span>
+                  <span className="text-gray-400">=</span>
+                  <span className="text-green-400">"Developer"</span>
+                </div>
+                <div className="text-gray-300 ml-4">
+                  <span className="text-primary">{`experience`}</span>
+                  <span className="text-gray-400">=</span>
+                  <span className="text-green-400">3</span>
+                  <span className="text-gray-400">+</span>
+                  <span className="text-green-400">"years"</span>
+                </div>
+                <div className="text-accent-purple">{'  />'}</div>
+              </div>
             </div>
           </div>
 
