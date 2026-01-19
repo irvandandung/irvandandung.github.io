@@ -24,7 +24,7 @@ export default function AboutMePage() {
       {/* Content */}
       <section className="pt-24 sm:pt-32 pb-12 sm:pb-20 px-4 sm:px-6 md:pl-20">
         <div className="max-w-7xl mx-auto">
-          <h1 className="section-title text-3xl sm:text-4xl md:text-5xl mb-12">#{t.pages.aboutMe.title}</h1>
+          <h1 className="section-title text-3xl sm:text-4xl md:text-5xl mb-12">{t.pages.aboutMe.title}</h1>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-12 items-center">
             <div className="space-y-3 sm:space-y-4 order-2 md:order-1">
