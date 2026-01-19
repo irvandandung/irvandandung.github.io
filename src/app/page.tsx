@@ -79,20 +79,33 @@ export default function Page() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
             {/* Left decorative elements - Hidden on mobile */}
-            <div className="hidden md:block relative h-64">
-              <div className="absolute top-0 left-0 w-20 h-20 border border-primary/20"></div>
-              <div className="absolute top-24 left-12 w-16 h-16 border border-primary/20"></div>
-              <div className="absolute bottom-0 left-20 w-24 h-24 border border-primary/20"></div>
-              
-              {/* Pixelated decorations */}
-              <div className="absolute top-10 left-32">
-                <PixelatedTriangle />
+            <div className="hidden md:flex flex-col justify-between relative h-80 pr-8">
+              {/* Top section - Border squares */}
+              <div className="relative h-20">
+                <div className="absolute top-0 left-0 w-20 h-20 border border-primary/20"></div>
               </div>
-              <div className="absolute top-1/2 left-20">
-                <PixelatedDiamond />
+
+              {/* Middle section - Pixelated shapes spread out */}
+              <div className="relative h-40 flex items-center justify-between">
+                {/* Left pixelated square cluster */}
+                <div className="absolute left-0 top-10">
+                  <PixelatedSquares />
+                </div>
+                
+                {/* Center triangle */}
+                <div className="absolute left-1/2 transform -translate-x-1/2 top-0">
+                  <PixelatedTriangle />
+                </div>
+                
+                {/* Right diamond */}
+                <div className="absolute right-0 bottom-0">
+                  <PixelatedDiamond />
+                </div>
               </div>
-              <div className="absolute bottom-20 left-0">
-                <PixelatedSquares />
+
+              {/* Bottom section - Border rectangle */}
+              <div className="relative h-20">
+                <div className="absolute bottom-0 left-12 w-24 h-24 border border-primary/20"></div>
               </div>
             </div>
 
