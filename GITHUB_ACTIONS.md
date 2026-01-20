@@ -290,11 +290,66 @@ on:
 
 ---
 
+## ESLint Configuration
+
+**File:** `.eslintrc.json`  
+**Purpose:** Code quality checks and best practices
+
+### ESLint Setup:
+```json
+{
+  "extends": "next/core-web-vitals",
+  "rules": {
+    "react/no-unescaped-entities": "off",
+    "@next/next/no-html-link-for-pages": "off"
+  }
+}
+```
+
+### What It Checks:
+- ✅ React best practices
+- ✅ Next.js specific rules
+- ✅ Hook dependencies
+- ✅ Type safety
+- ✅ Performance issues
+
+### Running ESLint Locally:
+```bash
+pnpm lint    # Check for linting errors
+```
+
+### Fixing Linting Issues:
+```bash
+# ESLint will auto-fix most issues
+pnpm lint
+
+# If needed, manually fix complex issues
+# ESLint will show file names and line numbers
+```
+
+### ESLint in Workflows:
+- Runs on every push (Test & Lint workflow)
+- Blocks deployment if there are errors
+- Helps maintain code quality across team
+
+### Common Issues & Fixes:
+
+| Issue | Solution |
+|-------|----------|
+| Ref hook warning | Store ref.current in variable before cleanup |
+| Unused variables | Remove them or prefix with `_` |
+| Missing dependencies | Add to useEffect dependency array |
+| Type errors | Check TypeScript types are correct |
+
+---
+
 ## Learning Resources
 
 - [GitHub Actions Documentation](https://docs.github.com/en/actions)
 - [Workflow Syntax Reference](https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions)
 - [Actions Marketplace](https://github.com/marketplace?type=actions)
+- [ESLint Rules](https://eslint.org/docs/rules/)
+- [Next.js ESLint Plugin](https://nextjs.org/docs/basic-features/eslint)
 
 ---
 
@@ -313,4 +368,5 @@ on:
 
 **Last Updated:** 2026-01-20  
 **Workflows Count:** 3  
-**Automatic Cache Busting:** Enabled ✅
+**Automatic Cache Busting:** Enabled ✅  
+**ESLint Configuration:** Active ✅

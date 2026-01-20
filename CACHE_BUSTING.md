@@ -12,7 +12,7 @@ Cache busting forces browsers to download the latest version of files by adding 
 All key assets now have version query parameters:
 
 ```
-/favicon.svg?v=2    # Version number
+/favicon.svg?v=2    # Currently at version 2
 /globals.css        # Automatically handled by Next.js
 /images/*.png       # Automatically handled by Next.js
 ```
@@ -204,8 +204,15 @@ Edit `scripts/cache-buster.js` and add more patterns to the `files` array for as
 - Portfolio uses `output: 'export'` for static hosting on GitHub Pages
 - Cache headers work via `_headers` file (Netlify format, works with GitHub Pages)
 
+### ESLint Configuration
+- Uses `.eslintrc.json` with Next.js recommended rules
+- Runs on every push via GitHub Actions
+- Ensures code quality and best practices
+- See GITHUB_ACTIONS.md for workflow details
+
 ---
 
 **Last Updated:** 2026-01-20
 **Next.js Version:** 14.2.35
 **Node Version:** 20.20.0
+**ESLint Version:** 8.56.0

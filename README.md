@@ -27,6 +27,7 @@ A modern, responsive portfolio website showcasing professional work and experien
 | **React** | 18.3 | UI library |
 | **TypeScript** | 5.4 | Type safety |
 | **Tailwind CSS** | 3.4 | Utility-first styling |
+| **ESLint** | 8.56 | Code quality & best practices |
 | **Node.js** | 20 LTS | Runtime environment |
 | **pnpm** | 10.28+ | Package manager (faster than npm) |
 
@@ -68,6 +69,8 @@ pnpm dev              # Development server with hot reload
 pnpm build            # Production build
 pnpm start            # Run production server
 pnpm lint             # Check code quality with ESLint
+pnpm cache-bust       # Increment cache buster versions (before deploy)
+pnpm deploy           # Cache bust + build (all-in-one)
 ```
 
 ## Project Structure
