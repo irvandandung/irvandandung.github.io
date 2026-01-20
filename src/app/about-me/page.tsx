@@ -82,36 +82,33 @@ export default function AboutMePage() {
             </div>
           </div>
 
-          {/* Additional Sections */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12 mt-16 sm:mt-20">
-            <div>
-              <h2 className="text-xl sm:text-2xl font-semibold mb-4 sm:mb-6 text-primary"># {t.pages.aboutMe.education}</h2>
-              <div className="space-y-4">
-                <div>
-                  <p className="font-semibold text-sm sm:text-base">{t.pages.aboutMe.selfTaught}</p>
-                  <p className="text-gray-300 text-xs sm:text-sm">{t.pages.aboutMe.onlineCourses}</p>
-                </div>
-                <div>
-                  <p className="font-semibold text-sm sm:text-base">{t.pages.aboutMe.modernWeb}</p>
-                  <p className="text-gray-300 text-xs sm:text-sm">{t.pages.aboutMe.modernWebDesc}</p>
-                </div>
-              </div>
-            </div>
+           {/* Additional Sections */}
+           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12 mt-16 sm:mt-20">
+             <div>
+               <h2 className="text-xl sm:text-2xl font-semibold mb-4 sm:mb-6 text-primary"># {t.pages.aboutMe.education}</h2>
+               <div className="space-y-4">
+                 {t.pages.aboutMe.items.education.map((item: any, idx: number) => (
+                   <div key={idx}>
+                     <p className="font-semibold text-sm sm:text-base">{item.title}</p>
+                     <p className="text-gray-300 text-xs sm:text-sm">{item.description}</p>
+                   </div>
+                 ))}
+               </div>
+             </div>
 
-            <div>
-              <h2 className="text-xl sm:text-2xl font-semibold mb-4 sm:mb-6 text-primary"># {t.pages.aboutMe.experience}</h2>
-              <div className="space-y-4">
-                <div>
-                  <p className="font-semibold text-sm sm:text-base">{t.pages.aboutMe.freelanceDeveloper}</p>
-                  <p className="text-gray-300 text-xs sm:text-sm">{t.pages.aboutMe.freelanceDates}</p>
-                </div>
-                <div>
-                  <p className="font-semibold text-sm sm:text-base">{t.pages.aboutMe.webProjects}</p>
-                  <p className="text-gray-300 text-xs sm:text-sm">{t.pages.aboutMe.webProjectsDesc}</p>
-                </div>
-              </div>
-            </div>
-          </div>
+             <div>
+               <h2 className="text-xl sm:text-2xl font-semibold mb-4 sm:mb-6 text-primary"># {t.pages.aboutMe.experience}</h2>
+               <div className="space-y-4">
+                 {t.pages.aboutMe.items.experience.map((item: any, idx: number) => (
+                   <div key={idx}>
+                     <p className="font-semibold text-sm sm:text-base">{item.title}</p>
+                     <p className="text-accent-purple text-xs sm:text-sm">{item.date}</p>
+                     <p className="text-gray-300 text-xs sm:text-sm">{item.description}</p>
+                   </div>
+                 ))}
+               </div>
+             </div>
+           </div>
         </div>
       </section>
 

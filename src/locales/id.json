@@ -109,29 +109,51 @@
         }
       ]
     },
-    "aboutMe": {
-      "title": "tentang-saya",
-      "greeting": "Halo, saya Muhamad Irvan Dandung!",
-      "bio1": "Saya adalah Senior Software Developer dengan 3+ tahun pengalaman profesional. Saya spesialis dalam membangun infrastruktur yang scalable dan membuat aplikasi yang cepat, aman di berbagai platform.",
-      "bio2": "Keahlian saya mencakup pengembangan full-stack dengan fondasi yang kuat di teknologi backend (PHP, Java, Kotlin, Go) dan frontend (TypeScript, React). Saya mahir dalam containerization (Docker, Kubernetes) dan platform cloud (AWS, GCP).",
-      "bio3": "Saya bersemangat dalam menulis kode yang bersih, menerapkan prinsip OOP, dan membangun solusi struktur data yang efisien. Ketika tidak coding, saya senang mengeksplorasi teknologi baru dan berkontribusi pada komunitas developer.",
-      "downloadResume": "Unduh Resume →",
-      "education": "Pendidikan",
-      "selfTaught": "Belajar Mandiri & Kursus Online",
-      "onlineCourses": "Pembelajaran & Pengembangan Berkelanjutan",
-      "modernWeb": "Teknologi & Keterampilan",
-      "modernWebDesc": "PHP, Java, Kotlin, Go, TypeScript, React, Docker, Kubernetes, AWS, GCP",
-      "experience": "Pengalaman",
-      "freelanceDeveloper": "Senior Software Developer",
-      "freelanceDates": "2021 - Sekarang",
-      "webProjects": "Pengembangan Full-Stack",
-      "webProjectsDesc": "Beberapa proyek dikerjakan di platform web dan aplikasi mobile"
-    }
+     "aboutMe": {
+       "title": "tentang-saya",
+       "greeting": "Halo, saya Muhamad Irvan Dandung!",
+       "bio1": "Saya adalah Senior Software Developer dengan 3+ tahun pengalaman profesional. Saya spesialis dalam membangun infrastruktur yang scalable dan membuat aplikasi yang cepat, aman di berbagai platform.",
+       "bio2": "Keahlian saya mencakup pengembangan full-stack dengan fondasi yang kuat di teknologi backend (PHP, Java, Kotlin, Go) dan frontend (TypeScript, React). Saya mahir dalam containerization (Docker, Kubernetes) dan platform cloud (AWS, GCP).",
+       "bio3": "Saya bersemangat dalam menulis kode yang bersih, menerapkan prinsip OOP, dan membangun solusi struktur data yang efisien. Ketika tidak coding, saya senang mengeksplorasi teknologi baru dan berkontribusi pada komunitas developer.",
+       "downloadResume": "Unduh Resume →",
+       "education": "Pendidikan",
+       "items": {
+         "education": [
+           {
+             "title": "Belajar Mandiri & Kursus Online",
+             "description": "Pembelajaran & Pengembangan Berkelanjutan melalui kursus online dan sertifikasi"
+           },
+           {
+             "title": "Teknologi & Keterampilan",
+             "description": "PHP, Java, Kotlin, Go, TypeScript, React, Docker, Kubernetes, AWS, GCP"
+           }
+         ],
+         "experience": [
+           {
+             "title": "Senior Software Developer",
+             "date": "2021 - Sekarang",
+             "description": "Membangun infrastruktur backend yang scalable dan aplikasi frontend modern"
+           },
+           {
+             "title": "Pengembangan Full-Stack",
+             "date": "2021 - Sekarang",
+             "description": "Beberapa proyek dikerjakan di platform web dan aplikasi mobile"
+           }
+         ]
+       },
+       "experience": "Pengalaman"
+     }
   },
   "footer": {
     "media": "media",
     "description": "Silakan hubungi saya untuk kolaborasi atau sekedar salam ramah!",
     "copyright": "© Hak Cipta 2024. Dibuat oleh Muhamad Irvan Dandung",
     "email": "irvandandung1@gmail.com"
-  }
+  },
+  "summaryCard": {
+     "cardOneTitle": "Keterampilan",
+     "cardTwoTitle": "Proyek",
+     "cardThreeTitle": "Pengalaman",
+     "cardFourTitle": "Klien"
+   }
 }

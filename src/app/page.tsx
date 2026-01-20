@@ -172,26 +172,26 @@ export default function Page() {
                 <div className="grid grid-cols-2 gap-4 w-4/5">
                   {/* Languages card */}
                   <div className="bg-dark-bg/80 border border-accent-purple/40 p-4 text-center">
-                    <div className="text-2xl font-bold text-accent-purple">{t.pages.home.skills.items.languages.length}+</div>
-                    <div className="text-xs text-gray-400 mt-1">{t.pages.home.skills.languages}</div>
+                    <div className="text-2xl font-bold text-accent-purple">{t.pages.home.skills.items.languages.length+t.pages.home.skills.items.databases.length+t.pages.home.skills.items.tools.length+t.pages.home.skills.items.frameworks.length}+</div>
+                    <div className="text-xs text-gray-400 mt-1">{t.summaryCard.cardOneTitle}</div>
                   </div>
                   
                   {/* Databases card */}
                   <div className="bg-dark-bg/80 border border-accent-purple/40 p-4 text-center">
-                    <div className="text-2xl font-bold text-accent-purple">{t.pages.home.skills.items.databases.length}+</div>
-                    <div className="text-xs text-gray-400 mt-1">{t.pages.home.skills.databases}</div>
+                    <div className="text-2xl font-bold text-accent-purple">{t.pages.projects.items.length}+</div>
+                    <div className="text-xs text-gray-400 mt-1">{t.summaryCard.cardTwoTitle}</div>
                   </div>
                   
                   {/* Tools card */}
                   <div className="bg-dark-bg/80 border border-accent-purple/40 p-4 text-center">
                     <div className="text-2xl font-bold text-accent-purple">{t.pages.home.skills.items.tools.length}+</div>
-                    <div className="text-xs text-gray-400 mt-1">{t.pages.home.skills.tools}</div>
+                    <div className="text-xs text-gray-400 mt-1">{t.summaryCard.cardThreeTitle}</div>
                   </div>
                   
                   {/* Frameworks card */}
                   <div className="bg-dark-bg/80 border border-accent-purple/40 p-4 text-center">
                     <div className="text-2xl font-bold text-accent-purple">{t.pages.home.skills.items.frameworks.length}+</div>
-                    <div className="text-xs text-gray-400 mt-1">{t.pages.home.skills.frameworks}</div>
+                    <div className="text-xs text-gray-400 mt-1">{t.summaryCard.cardFourTitle}</div>
                   </div>
                 </div>
              </div>

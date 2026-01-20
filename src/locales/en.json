@@ -109,29 +109,51 @@
         }
       ]
     },
-     "aboutMe": {
-       "title": "about-me",
-       "greeting": "Hello, I'm Muhamad Irvan Dandung!",
-       "bio1": "I'm a Senior Software Developer with 3+ years of professional experience. I specialize in building scalable infrastructure and creating fast, secure applications across multiple platforms.",
-       "bio2": "My expertise spans full-stack development with strong fundamentals in both backend (PHP, Java, Kotlin, Go) and frontend (TypeScript, React) technologies. I'm proficient with containerization (Docker, Kubernetes) and cloud platforms (AWS, GCP).",
-       "bio3": "I'm passionate about writing clean code, following OOP principles, and building data structure-efficient solutions. When I'm not coding, I enjoy exploring new technologies and contributing to the developer community.",
-       "downloadResume": "Download Resume →",
-       "education": "Education",
-       "selfTaught": "Self-taught & Online Learning",
-       "onlineCourses": "Continuous Learning & Growth",
-       "modernWeb": "Technologies & Skills",
-       "modernWebDesc": "PHP, Java, Kotlin, Go, TypeScript, React, Docker, Kubernetes, AWS, GCP",
-       "experience": "Experience",
-       "freelanceDeveloper": "Senior Software Developer",
-       "freelanceDates": "2021 - Present",
-       "webProjects": "Full-Stack Development",
-       "webProjectsDesc": "Multiple projects delivered across web and mobile platforms"
-     }
+      "aboutMe": {
+        "title": "about-me",
+        "greeting": "Hello, I'm Muhamad Irvan Dandung!",
+        "bio1": "I'm a Senior Software Developer with 3+ years of professional experience. I specialize in building scalable infrastructure and creating fast, secure applications across multiple platforms.",
+        "bio2": "My expertise spans full-stack development with strong fundamentals in both backend (PHP, Java, Kotlin, Go) and frontend (TypeScript, React) technologies. I'm proficient with containerization (Docker, Kubernetes) and cloud platforms (AWS, GCP).",
+        "bio3": "I'm passionate about writing clean code, following OOP principles, and building data structure-efficient solutions. When I'm not coding, I enjoy exploring new technologies and contributing to the developer community.",
+        "downloadResume": "Download Resume →",
+        "education": "Education",
+        "items": {
+          "education": [
+            {
+              "title": "Self-taught & Online Learning",
+              "description": "Continuous Learning & Growth through online courses and certifications"
+            },
+            {
+              "title": "Technologies & Skills",
+              "description": "PHP, Java, Kotlin, Go, TypeScript, React, Docker, Kubernetes, AWS, GCP"
+            }
+          ],
+          "experience": [
+            {
+              "title": "Senior Software Developer",
+              "date": "2021 - Present",
+              "description": "Building scalable backend infrastructure and modern frontend applications"
+            },
+            {
+              "title": "Full-Stack Development",
+              "date": "2021 - Present",
+              "description": "Multiple projects delivered across web and mobile platforms"
+            }
+          ]
+        },
+        "experience": "Experience"
+      }
   },
    "footer": {
      "media": "media",
      "description": "Feel free to reach out for collaborations or just a friendly hello!",
      "copyright": "© Copyright 2024. Made by Muhamad Irvan Dandung",
      "email": "irvandandung1@gmail.com"
+   },
+   "summaryCard": {
+     "cardOneTitle": "Skills",
+     "cardTwoTitle": "Projects",
+     "cardThreeTitle": "Experience",
+     "cardFourTitle": "Clients"
    }
 }
