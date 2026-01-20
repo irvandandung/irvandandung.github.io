@@ -106,6 +106,7 @@ export default function Page() {
 
             {/* Skills Table */}
             <div className="overflow-x-auto">
+              {/* Main Skills Table */}
               <table className="skills-table text-xs sm:text-sm">
                 <thead>
                   <tr>
@@ -115,13 +116,33 @@ export default function Page() {
                   </tr>
                 </thead>
                 <tbody>
-                  {[0, 1, 2, 3].map((idx) => (
-                    <tr key={idx}>
-                      <td>{t.pages.home.skills.items.languages[idx]}</td>
-                      <td>{t.pages.home.skills.items.databases[idx] || ''}</td>
-                      <td className="hidden sm:table-cell">{t.pages.home.skills.items.tools[idx] || ''}</td>
-                    </tr>
-                  ))}
+                  {Math.max(
+                    t.pages.home.skills.items.languages.length,
+                    t.pages.home.skills.items.databases.length,
+                    t.pages.home.skills.items.tools.length
+                  ) > 4 ? (
+                    // Show all items if more than 4
+                    Array.from({ length: Math.max(
+                      t.pages.home.skills.items.languages.length,
+                      t.pages.home.skills.items.databases.length,
+                      t.pages.home.skills.items.tools.length
+                    ) }).map((_, idx) => (
+                      <tr key={idx}>
+                        <td>{t.pages.home.skills.items.languages[idx] || ''}</td>
+                        <td>{t.pages.home.skills.items.databases[idx] || ''}</td>
+                        <td className="hidden sm:table-cell">{t.pages.home.skills.items.tools[idx] || ''}</td>
+                      </tr>
+                    ))
+                  ) : (
+                    // Show first 4 items if 4 or less
+                    [0, 1, 2, 3].map((idx) => (
+                      <tr key={idx}>
+                        <td>{t.pages.home.skills.items.languages[idx] || ''}</td>
+                        <td>{t.pages.home.skills.items.databases[idx] || ''}</td>
+                        <td className="hidden sm:table-cell">{t.pages.home.skills.items.tools[idx] || ''}</td>
+                      </tr>
+                    ))
+                  )}
                 </tbody>
               </table>
 

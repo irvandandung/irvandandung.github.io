@@ -34,9 +34,9 @@
          "frameworks": "Frameworks",
          "other": "Other",
          "items": {
-           "languages": ["PHP", "Java", "Kotlin", "TypeScript", "Go", "Python"],
-           "databases": ["PostgreSQL", "MySQL", "MongoDB", "Redis"],
-           "tools": ["Docker", "Kubernetes", "Linux", "Git", "VSCode", "Node.js"],
+           "languages": ["TypeScript", "Go", "PHP", "Java", "Javascript", "Kotlin", "Python"],
+           "databases": ["PostgreSQL", "MySQL", "MongoDB", "Redis", "Elasticsearch", "Firebase", "Cloud Database"],
+           "tools": ["Docker", "Kubernetes", "Linux", "Git", "VSCode", "Node.js", "Opentelemetry", "Terraform"],
            "frameworks": ["React", "Next.js", "Spring Boot", "Laravel", "NestJS", "Express"]
          }
        },
