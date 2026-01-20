@@ -154,6 +154,7 @@
      "cardOneTitle": "Skills",
      "cardTwoTitle": "Projects",
      "cardThreeTitle": "Experience",
-     "cardFourTitle": "Clients"
+     "cardFourTitle": "Clients",
+     "customValueCardFour": "3"
    }
 }

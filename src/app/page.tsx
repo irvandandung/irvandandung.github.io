@@ -7,6 +7,7 @@ import { useI18n } from "./contexts/I18nContext";
 import { Navigation } from "./components/Navigation";
 import { Hero } from "./components/Hero";
 import { Footer } from "./components/Footer";
+import { CounterCard } from "./components/CounterCard";
 import { PixelatedTriangle, PixelatedDiamond, PixelatedSquares } from "./components/Decorations";
 
 export default function Page() {
@@ -169,31 +170,31 @@ export default function Page() {
            <div className="relative h-64 sm:h-80 md:h-96 flex items-center justify-center">
              <div className="w-full h-full bg-gradient-to-br from-accent-purple/15 via-primary/5 to-accent-purple/5 flex items-center justify-center overflow-hidden relative">
                {/* Stats cards */}
-                <div className="grid grid-cols-2 gap-4 w-4/5">
-                  {/* Languages card */}
-                  <div className="bg-dark-bg/80 border border-accent-purple/40 p-4 text-center">
-                    <div className="text-2xl font-bold text-accent-purple">{t.pages.home.skills.items.languages.length+t.pages.home.skills.items.databases.length+t.pages.home.skills.items.tools.length+t.pages.home.skills.items.frameworks.length}+</div>
-                    <div className="text-xs text-gray-400 mt-1">{t.summaryCard.cardOneTitle}</div>
-                  </div>
-                  
-                  {/* Databases card */}
-                  <div className="bg-dark-bg/80 border border-accent-purple/40 p-4 text-center">
-                    <div className="text-2xl font-bold text-accent-purple">{t.pages.projects.items.length}+</div>
-                    <div className="text-xs text-gray-400 mt-1">{t.summaryCard.cardTwoTitle}</div>
-                  </div>
-                  
-                  {/* Tools card */}
-                  <div className="bg-dark-bg/80 border border-accent-purple/40 p-4 text-center">
-                    <div className="text-2xl font-bold text-accent-purple">{t.pages.home.skills.items.tools.length}+</div>
-                    <div className="text-xs text-gray-400 mt-1">{t.summaryCard.cardThreeTitle}</div>
-                  </div>
-                  
-                  {/* Frameworks card */}
-                  <div className="bg-dark-bg/80 border border-accent-purple/40 p-4 text-center">
-                    <div className="text-2xl font-bold text-accent-purple">{t.pages.home.skills.items.frameworks.length}+</div>
-                    <div className="text-xs text-gray-400 mt-1">{t.summaryCard.cardFourTitle}</div>
-                  </div>
-                </div>
+                 <div className="grid grid-cols-2 gap-4 w-4/5">
+                   {/* Skills card */}
+                   <CounterCard 
+                     target={t.pages.home.skills.items.languages.length + t.pages.home.skills.items.databases.length + t.pages.home.skills.items.tools.length + t.pages.home.skills.items.frameworks.length}
+                     label={t.summaryCard.cardOneTitle}
+                   />
+                   
+                   {/* Projects card */}
+                   <CounterCard 
+                     target={t.pages.projects.items.length}
+                     label={t.summaryCard.cardTwoTitle}
+                   />
+                   
+                   {/* Experience card */}
+                   <CounterCard 
+                     target={t.pages.aboutMe.items.experience.length}
+                     label={t.summaryCard.cardThreeTitle}
+                   />
+                   
+                   {/* Clients card */}
+                   <CounterCard 
+                     target={parseInt(t.summaryCard.customValueCardFour) || 0}
+                     label={t.summaryCard.cardFourTitle}
+                   />
+                 </div>
              </div>
            </div>
         </div>

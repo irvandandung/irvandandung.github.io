@@ -154,6 +154,7 @@
      "cardOneTitle": "Keterampilan",
      "cardTwoTitle": "Proyek",
      "cardThreeTitle": "Pengalaman",
-     "cardFourTitle": "Klien"
+     "cardFourTitle": "Klien",
+     "customValueCardFour": "3"
    }
 }
