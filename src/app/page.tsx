@@ -141,7 +141,7 @@ export default function Page() {
                   <tr>
                     <th>{t.pages.home.skills.languages}</th>
                     <th>{t.pages.home.skills.databases}</th>
-                    <th className="hidden sm:table-cell">{t.pages.home.skills.tools}</th>
+                    <th>{t.pages.home.skills.tools}</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -159,7 +159,7 @@ export default function Page() {
                       <tr key={idx}>
                         <td>{t.pages.home.skills.items.languages[idx] || ''}</td>
                         <td>{t.pages.home.skills.items.databases[idx] || ''}</td>
-                        <td className="hidden sm:table-cell">{t.pages.home.skills.items.tools[idx] || ''}</td>
+                        <td>{t.pages.home.skills.items.tools[idx] || ''}</td>
                       </tr>
                     ))
                   ) : (
@@ -168,7 +168,7 @@ export default function Page() {
                       <tr key={idx}>
                         <td>{t.pages.home.skills.items.languages[idx] || ''}</td>
                         <td>{t.pages.home.skills.items.databases[idx] || ''}</td>
-                        <td className="hidden sm:table-cell">{t.pages.home.skills.items.tools[idx] || ''}</td>
+                        <td>{t.pages.home.skills.items.tools[idx] || ''}</td>
                       </tr>
                     ))
                   )}
