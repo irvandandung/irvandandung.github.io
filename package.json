@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "cache-bust": "node scripts/cache-buster.js",
+    "deploy": "npm run cache-bust && npm run build"
   },
   "dependencies": {
     "react": "^18.3.1",
