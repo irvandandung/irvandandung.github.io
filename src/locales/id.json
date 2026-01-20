@@ -34,7 +34,7 @@
         "frameworks": "Framework",
         "other": "Lainnya",
         "items": {
-          "languages": ["TypeScript", "Go", "PHP", "Java", "Javascript", "Kotlin", "Python"],
+          "languages": ["TypeScript", "Go", "PHP", "Java", "Javascript", ".Net", "Kotlin", "Python"],
           "databases": ["PostgreSQL", "MySQL", "MongoDB", "Redis", "Elasticsearch", "Firebase", "Cloud Database"],
           "tools": ["Docker", "Kubernetes", "Linux", "Git", "VSCode", "Node.js", "Opentelemetry", "Terraform"],
           "frameworks": ["React", "Next.js", "Spring Boot", "Laravel", "NestJS", "Express"]
