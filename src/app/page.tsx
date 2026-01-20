@@ -104,82 +104,82 @@ export default function Page() {
 
       {/* Skills Section */}
       <section className="py-12 sm:py-20 px-4 sm:px-6 md:pl-20">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="section-title text-2xl sm:text-3xl">{t.pages.home.skills.title}</h2>
+         <div className="max-w-7xl mx-auto">
+           <h2 className="section-title text-2xl sm:text-3xl">{t.pages.home.skills.title}</h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
-            {/* Left decorative elements - Hidden on mobile */}
-            <div className="hidden md:block relative h-96">
-              {/* Top-left border box */}
-              <div className="absolute top-0 left-0 w-20 h-20 border-2 border-primary/40"></div>
-              
-              {/* Middle-left border box */}
-              <div className="absolute top-1/3 left-8 w-24 h-24 border-2 border-primary/40"></div>
-              
-              {/* Bottom-left border box */}
-              <div className="absolute bottom-0 left-0 w-20 h-20 border-2 border-primary/40"></div>
+           <div className="grid grid-cols-1 md:grid-cols-4 gap-6 sm:gap-8">
+             {/* Left decorative elements - 1/4 width */}
+             <div className="hidden md:block relative h-96">
+               {/* Top-left border box */}
+               <div className="absolute top-0 left-0 w-20 h-20 border-2 border-primary/40"></div>
+               
+               {/* Middle-left border box */}
+               <div className="absolute top-1/3 left-8 w-24 h-24 border-2 border-primary/40"></div>
+               
+               {/* Bottom-left border box */}
+               <div className="absolute bottom-0 left-0 w-20 h-20 border-2 border-primary/40"></div>
 
-              {/* Pixelated decorations - smaller and contained */}
-              <div className="absolute top-8 left-32">
-                <PixelatedSquares />
-              </div>
-              
-              <div className="absolute top-1/2 left-16 transform -translate-y-1/2">
-                <PixelatedTriangle />
-              </div>
-              
-              <div className="absolute bottom-0 left-32">
-                <PixelatedDiamond />
-              </div>
-            </div>
+               {/* Pixelated decorations - smaller and contained */}
+               <div className="absolute top-8 left-32">
+                 <PixelatedSquares />
+               </div>
+               
+               <div className="absolute top-1/2 left-16 transform -translate-y-1/2">
+                 <PixelatedTriangle />
+               </div>
+               
+               <div className="absolute bottom-0 left-32">
+                 <PixelatedDiamond />
+               </div>
+             </div>
 
-            {/* Skills Table */}
-            <div>
-              {/* Main Skills - 3 Columns Grid */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
-                {/* Languages Column */}
-                <div className="space-y-3">
-                  <h4 className="text-primary font-semibold text-sm sm:text-base border-b border-primary/40 pb-2">{t.pages.home.skills.languages}</h4>
-                  <ul className="space-y-2">
-                    {t.pages.home.skills.items.languages.map((language: string, idx: number) => (
-                      <li key={idx} className="text-xs sm:text-sm text-gray-300">• {language}</li>
-                    ))}
-                  </ul>
-                </div>
+             {/* Skills Table - 3/4 width */}
+             <div className="md:col-span-3">
+               {/* Main Skills - 3 Columns Grid */}
+               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
+                 {/* Languages Column */}
+                 <div className="space-y-4">
+                   <h4 className="text-primary font-semibold text-base sm:text-lg md:text-xl border-b border-primary/40 pb-3">{t.pages.home.skills.languages}</h4>
+                   <ul className="space-y-3">
+                     {t.pages.home.skills.items.languages.map((language: string, idx: number) => (
+                       <li key={idx} className="text-sm sm:text-base md:text-lg text-gray-300">• {language}</li>
+                     ))}
+                   </ul>
+                 </div>
 
-                {/* Databases Column */}
-                <div className="space-y-3">
-                  <h4 className="text-primary font-semibold text-sm sm:text-base border-b border-primary/40 pb-2">{t.pages.home.skills.databases}</h4>
-                  <ul className="space-y-2">
-                    {t.pages.home.skills.items.databases.map((database: string, idx: number) => (
-                      <li key={idx} className="text-xs sm:text-sm text-gray-300">• {database}</li>
-                    ))}
-                  </ul>
-                </div>
+                 {/* Databases Column */}
+                 <div className="space-y-4">
+                   <h4 className="text-primary font-semibold text-base sm:text-lg md:text-xl border-b border-primary/40 pb-3">{t.pages.home.skills.databases}</h4>
+                   <ul className="space-y-3">
+                     {t.pages.home.skills.items.databases.map((database: string, idx: number) => (
+                       <li key={idx} className="text-sm sm:text-base md:text-lg text-gray-300">• {database}</li>
+                     ))}
+                   </ul>
+                 </div>
 
-                {/* Tools Column */}
-                <div className="space-y-3">
-                  <h4 className="text-primary font-semibold text-sm sm:text-base border-b border-primary/40 pb-2">{t.pages.home.skills.tools}</h4>
-                  <ul className="space-y-2">
-                    {t.pages.home.skills.items.tools.map((tool: string, idx: number) => (
-                      <li key={idx} className="text-xs sm:text-sm text-gray-300">• {tool}</li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
+                 {/* Tools Column */}
+                 <div className="space-y-4">
+                   <h4 className="text-primary font-semibold text-base sm:text-lg md:text-xl border-b border-primary/40 pb-3">{t.pages.home.skills.tools}</h4>
+                   <ul className="space-y-3">
+                     {t.pages.home.skills.items.tools.map((tool: string, idx: number) => (
+                       <li key={idx} className="text-sm sm:text-base md:text-lg text-gray-300">• {tool}</li>
+                     ))}
+                   </ul>
+                 </div>
+               </div>
 
-              {/* Frameworks Section */}
-              <div className="mt-6 sm:mt-8">
-                <h4 className="text-primary font-semibold mb-3 sm:mb-4 text-sm sm:text-base">{t.pages.home.skills.other}</h4>
-                <div className="space-y-2">
-                  {t.pages.home.skills.items.frameworks.map((framework: string, idx: number) => (
-                    <div key={idx} className="text-xs sm:text-sm text-gray-300">• {framework}</div>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+               {/* Frameworks Section */}
+               <div className="mt-8 sm:mt-10">
+                 <h4 className="text-primary font-semibold mb-4 sm:mb-6 text-base sm:text-lg md:text-xl">{t.pages.home.skills.other}</h4>
+                 <div className="space-y-3">
+                   {t.pages.home.skills.items.frameworks.map((framework: string, idx: number) => (
+                     <div key={idx} className="text-sm sm:text-base md:text-lg text-gray-300">• {framework}</div>
+                   ))}
+                 </div>
+               </div>
+             </div>
+           </div>
+         </div>
       </section>
 
       {/* About Section */}
