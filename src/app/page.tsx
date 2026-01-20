@@ -169,31 +169,31 @@ export default function Page() {
            <div className="relative h-64 sm:h-80 md:h-96 flex items-center justify-center">
              <div className="w-full h-full bg-gradient-to-br from-accent-purple/15 via-primary/5 to-accent-purple/5 flex items-center justify-center overflow-hidden relative">
                {/* Stats cards */}
-               <div className="grid grid-cols-2 gap-4 w-4/5">
-                 {/* Skills card */}
-                 <div className="bg-dark-bg/80 border border-accent-purple/40 p-4 text-center">
-                   <div className="text-2xl font-bold text-accent-purple">8+</div>
-                   <div className="text-xs text-gray-400 mt-1">Languages</div>
-                 </div>
-                 
-                 {/* Experience card */}
-                 <div className="bg-dark-bg/80 border border-accent-purple/40 p-4 text-center">
-                   <div className="text-2xl font-bold text-accent-purple">3+</div>
-                   <div className="text-xs text-gray-400 mt-1">Experience</div>
-                 </div>
-                 
-                 {/* Projects card */}
-                 <div className="bg-dark-bg/80 border border-accent-purple/40 p-4 text-center">
-                   <div className="text-2xl font-bold text-accent-purple">20+</div>
-                   <div className="text-xs text-gray-400 mt-1">Projects</div>
-                 </div>
-                 
-                 {/* Clients card */}
-                 <div className="bg-dark-bg/80 border border-accent-purple/40 p-4 text-center">
-                   <div className="text-2xl font-bold text-accent-purple">15+</div>
-                   <div className="text-xs text-gray-400 mt-1">Clients</div>
-                 </div>
-               </div>
+                <div className="grid grid-cols-2 gap-4 w-4/5">
+                  {/* Languages card */}
+                  <div className="bg-dark-bg/80 border border-accent-purple/40 p-4 text-center">
+                    <div className="text-2xl font-bold text-accent-purple">{t.pages.home.skills.items.languages.length}+</div>
+                    <div className="text-xs text-gray-400 mt-1">{t.pages.home.skills.languages}</div>
+                  </div>
+                  
+                  {/* Databases card */}
+                  <div className="bg-dark-bg/80 border border-accent-purple/40 p-4 text-center">
+                    <div className="text-2xl font-bold text-accent-purple">{t.pages.home.skills.items.databases.length}+</div>
+                    <div className="text-xs text-gray-400 mt-1">{t.pages.home.skills.databases}</div>
+                  </div>
+                  
+                  {/* Tools card */}
+                  <div className="bg-dark-bg/80 border border-accent-purple/40 p-4 text-center">
+                    <div className="text-2xl font-bold text-accent-purple">{t.pages.home.skills.items.tools.length}+</div>
+                    <div className="text-xs text-gray-400 mt-1">{t.pages.home.skills.tools}</div>
+                  </div>
+                  
+                  {/* Frameworks card */}
+                  <div className="bg-dark-bg/80 border border-accent-purple/40 p-4 text-center">
+                    <div className="text-2xl font-bold text-accent-purple">{t.pages.home.skills.items.frameworks.length}+</div>
+                    <div className="text-xs text-gray-400 mt-1">{t.pages.home.skills.frameworks}</div>
+                  </div>
+                </div>
              </div>
            </div>
         </div>
