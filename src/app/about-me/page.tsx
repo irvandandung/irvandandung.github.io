@@ -1,5 +1,6 @@
 'use client';
 
+import Image from "next/image";
 import { useState } from "react";
 import { useTitleAnimation } from "@/app/hooks/useTitleAnimation";
 import { useI18n } from "@/app/contexts/I18nContext";
@@ -38,32 +39,22 @@ export default function AboutMePage() {
               <p className="text-gray-300 leading-relaxed text-xs sm:text-sm md:text-base">
                 {t.pages.aboutMe.bio3}
               </p>
-              <button className="px-4 sm:px-6 py-2 border border-primary text-primary hover:bg-primary/10 rounded transition text-xs sm:text-sm md:text-base">
+              <button className="px-4 sm:px-6 py-2 border border-primary text-primary hover:bg-primary/10 transition text-xs sm:text-sm md:text-base">
                 {t.pages.aboutMe.downloadResume}
               </button>
             </div>
 
             <div className="relative h-64 sm:h-80 md:h-96 order-1 md:order-2">
-              <div className="w-full h-full bg-gradient-to-br from-accent-purple/20 via-primary/10 to-accent-purple/5 flex items-center justify-center overflow-hidden relative">
-                {/* Developer profile section */}
-                <div className="w-4/5 h-4/5 border-2 border-accent-purple/40 bg-dark-bg/40 flex flex-col items-center justify-center gap-4 p-6">
-                  {/* Avatar placeholder */}
-                  <div className="w-20 h-20 rounded-full border-2 border-accent-purple/60 flex items-center justify-center bg-accent-purple/10">
-                    <span className="text-3xl">👨‍💻</span>
-                  </div>
-                  
-                  {/* Name and title */}
-                  <div className="text-center">
-                    <p className="text-sm font-semibold text-primary">Muhamad Irvan</p>
-                    <p className="text-xs text-accent-purple">Senior Developer</p>
-                  </div>
-                  
-                  {/* Skills badges */}
-                  <div className="flex flex-wrap gap-2 justify-center mt-2">
-                    <span className="px-2 py-1 text-xs border border-accent-purple/40 text-accent-purple bg-accent-purple/5">React</span>
-                    <span className="px-2 py-1 text-xs border border-accent-purple/40 text-accent-purple bg-accent-purple/5">Node</span>
-                    <span className="px-2 py-1 text-xs border border-accent-purple/40 text-accent-purple bg-accent-purple/5">TypeScript</span>
-                  </div>
+              <div className="w-full h-full bg-gradient-to-br from-accent-purple/20 via-primary/10 to-accent-purple/5 flex items-center justify-center overflow-hidden relative p-4">
+                {/* Image frame with border */}
+                <div className="relative w-full h-full border-2 border-accent-purple/40 flex items-center justify-center bg-dark-bg/40">
+                  <Image
+                    src="/Dandung-removebg-preview.png"
+                    alt="Muhamad Irvan Dandung"
+                    fill
+                    className="object-contain object-center"
+                    priority
+                  />
                 </div>
               </div>
 

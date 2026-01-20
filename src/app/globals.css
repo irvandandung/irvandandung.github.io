@@ -117,7 +117,7 @@ a {
 
 /* Badge styling */
 .badge {
-  @apply px-3 py-1 bg-accent-purple/20 text-accent-purple text-sm font-bold border border-accent-purple;
+  @apply px-3 py-1 text-sm font-bold border;
 }
 
 /* Project card styling */
