@@ -322,6 +322,35 @@ const firaCode = Fira_Code({
 2. Enable GitHub Pages in repository settings
 3. Select `gh-pages` branch (auto-created by deploy workflow)
 
+## GitHub Actions & Automation
+
+This portfolio uses **3 automated GitHub Actions workflows** for testing, building, and deployment:
+
+### 1. **Build and Deploy** (Automatic)
+- **Trigger**: Every push to `master` branch
+- **Actions**: Cache busting → Build → Deploy to GitHub Pages
+- **File**: `.github/workflows/nextjs.yml`
+
+### 2. **Test and Lint** (Automatic)
+- **Trigger**: Every push and pull request
+- **Actions**: Lint code → Test build → Verify cache busting
+- **File**: `.github/workflows/test.yml`
+
+### 3. **Manual Cache Bust** (On-Demand)
+- **Trigger**: Manual dispatch from GitHub Actions UI
+- **Actions**: Force cache refresh + rebuild + redeploy
+- **File**: `.github/workflows/manual-cache-bust.yml`
+- **How to use**: Actions tab → Manual Cache Bust → Run workflow
+
+### Why Automated Workflows?
+
+✅ **Automatic cache busting** - No manual version incrementing needed  
+✅ **Continuous deployment** - Code pushed = live in minutes  
+✅ **Quality checks** - Linting and build tests before deployment  
+✅ **Zero-downtime** - Deploy while users browse the site  
+
+**Read more**: See `GITHUB_ACTIONS.md` for complete workflow documentation
+
 ## Environment Variables
 
 `.env.local` (optional):
