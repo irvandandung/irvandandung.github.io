@@ -1,0 +1,65 @@
+name: Manual Cache Bust
+
+on:
+  workflow_dispatch:
+    inputs:
+      reason:
+        description: 'Reason for cache busting'
+        required: true
+        default: 'Updated static assets'
+
+jobs:
+  cache-bust:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 10
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Increment cache buster versions
+        run: node scripts/cache-buster.js
+
+      - name: Configure git
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+
+      - name: Commit and push cache buster changes
+        run: |
+          git add .
+          git commit -m "chore: Increment cache buster versions - ${{ github.event.inputs.reason }}" || echo "No changes to commit"
+          git push
+
+      - name: Build and deploy
+        run: |
+          pnpm run build
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./out
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: cache-bust
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

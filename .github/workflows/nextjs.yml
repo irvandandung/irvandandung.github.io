@@ -62,6 +62,9 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
+      - name: Increment cache buster versions
+        run: node scripts/cache-buster.js
+
       - name: Build with Next.js
         run: pnpm run build
 
