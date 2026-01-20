@@ -2,10 +2,12 @@
 
 import { useState, useEffect } from 'react';
 
-export function useCounter(target: number, duration: number = 2000) {
+export function useCounter(target: number, duration: number = 2000, shouldStart: boolean = true) {
   const [count, setCount] = useState(0);
 
   useEffect(() => {
+    if (!shouldStart) return;
+
     let startTime: number;
     let animationFrameId: number;
 
@@ -29,7 +31,7 @@ export function useCounter(target: number, duration: number = 2000) {
         cancelAnimationFrame(animationFrameId);
       }
     };
-  }, [target, duration]);
+  }, [target, duration, shouldStart]);
 
   return count;
 }
