@@ -134,63 +134,48 @@ export default function Page() {
             </div>
 
             {/* Skills Table */}
-            <div className="overflow-x-auto">
-              {/* Main Skills Table */}
-              <table className="skills-table text-xs sm:text-sm">
-                <thead>
-                  <tr>
-                    <th>{t.pages.home.skills.languages}</th>
-                    <th>{t.pages.home.skills.databases}</th>
-                    <th>{t.pages.home.skills.tools}</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {Math.max(
-                    t.pages.home.skills.items.languages.length,
-                    t.pages.home.skills.items.databases.length,
-                    t.pages.home.skills.items.tools.length
-                  ) > 4 ? (
-                    // Show all items if more than 4
-                    Array.from({ length: Math.max(
-                      t.pages.home.skills.items.languages.length,
-                      t.pages.home.skills.items.databases.length,
-                      t.pages.home.skills.items.tools.length
-                    ) }).map((_, idx) => (
-                      <tr key={idx}>
-                        <td>{t.pages.home.skills.items.languages[idx] || ''}</td>
-                        <td>{t.pages.home.skills.items.databases[idx] || ''}</td>
-                        <td>{t.pages.home.skills.items.tools[idx] || ''}</td>
-                      </tr>
-                    ))
-                  ) : (
-                    // Show first 4 items if 4 or less
-                    [0, 1, 2, 3].map((idx) => (
-                      <tr key={idx}>
-                        <td>{t.pages.home.skills.items.languages[idx] || ''}</td>
-                        <td>{t.pages.home.skills.items.databases[idx] || ''}</td>
-                        <td>{t.pages.home.skills.items.tools[idx] || ''}</td>
-                      </tr>
-                    ))
-                  )}
-                </tbody>
-              </table>
+            <div>
+              {/* Main Skills - 3 Columns Grid */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
+                {/* Languages Column */}
+                <div className="space-y-3">
+                  <h4 className="text-primary font-semibold text-sm sm:text-base border-b border-primary/40 pb-2">{t.pages.home.skills.languages}</h4>
+                  <ul className="space-y-2">
+                    {t.pages.home.skills.items.languages.map((language: string, idx: number) => (
+                      <li key={idx} className="text-xs sm:text-sm text-gray-300">• {language}</li>
+                    ))}
+                  </ul>
+                </div>
 
+                {/* Databases Column */}
+                <div className="space-y-3">
+                  <h4 className="text-primary font-semibold text-sm sm:text-base border-b border-primary/40 pb-2">{t.pages.home.skills.databases}</h4>
+                  <ul className="space-y-2">
+                    {t.pages.home.skills.items.databases.map((database: string, idx: number) => (
+                      <li key={idx} className="text-xs sm:text-sm text-gray-300">• {database}</li>
+                    ))}
+                  </ul>
+                </div>
+
+                {/* Tools Column */}
+                <div className="space-y-3">
+                  <h4 className="text-primary font-semibold text-sm sm:text-base border-b border-primary/40 pb-2">{t.pages.home.skills.tools}</h4>
+                  <ul className="space-y-2">
+                    {t.pages.home.skills.items.tools.map((tool: string, idx: number) => (
+                      <li key={idx} className="text-xs sm:text-sm text-gray-300">• {tool}</li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+
+              {/* Frameworks Section */}
               <div className="mt-6 sm:mt-8">
                 <h4 className="text-primary font-semibold mb-3 sm:mb-4 text-sm sm:text-base">{t.pages.home.skills.other}</h4>
-                <table className="skills-table text-xs sm:text-sm">
-                  <thead>
-                    <tr>
-                      <th>{t.pages.home.skills.frameworks}</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {t.pages.home.skills.items.frameworks.map((framework: string, idx: number) => (
-                      <tr key={idx}>
-                        <td>{framework}</td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
+                <div className="space-y-2">
+                  {t.pages.home.skills.items.frameworks.map((framework: string, idx: number) => (
+                    <div key={idx} className="text-xs sm:text-sm text-gray-300">• {framework}</div>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
