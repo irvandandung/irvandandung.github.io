@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   description: "3+ years of experience building scalable infrastructure and creating fast, secure applications",
   metadataBase: new URL("https://irvandandung.github.io"),
   icons: {
-    icon: "/favicon.svg?v=1",
+    icon: "/favicon.svg?v=2",
   },
   openGraph: {
     title: "Muhamad Irvan Dandung — Full-Stack Developer",
@@ -36,6 +36,9 @@ export default function RootLayout({
     <html lang="en" className={firaCode.variable}>
       <head>
         <meta name="theme-color" content="#C778DD" />
+        <meta httpEquiv="Cache-Control" content="public, max-age=0, must-revalidate" />
+        <meta httpEquiv="Pragma" content="no-cache" />
+        <meta httpEquiv="Expires" content="0" />
       </head>
       <body className={`${firaCode.className}`}>
         <I18nProvider>
