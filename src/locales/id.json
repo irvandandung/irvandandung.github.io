@@ -61,34 +61,46 @@
       "description": "Berikut adalah beberapa proyek terbaru saya",
       "items": [
         {
-          "title": "ChertNodes",
-          "description": "Platform hosting server Minecraft dengan fitur manajemen lanjutan",
-          "tags": ["Live ⇆", "Tersimpan"]
+          "title": "EPL Football PWA",
+          "description": "Platform web berisikan tim EPL, website ini dibuat untuk belajar di dicoding materi pwa dimana ini dijadikan sebagai proyek submission",
+          "tags": ["Live ⇆", "Tersimpan", "Belajar"],
+          "link": "https://github.com",
+          "image": "epl-football-pwa.png"
+        },
+         {
+           "title": "Next.js Portfolio",
+           "description": "Website portfolio responsif modern dibangun dengan Next.js, React, TypeScript, dan Tailwind CSS",
+           "tags": ["Production", "SSG", "TypeScript"],
+           "link": "https://github.com",
+           "image": ""
+         },
+        {
+          "title": "Platform E-Commerce",
+          "description": "Solusi e-commerce full-stack dengan integrasi pembayaran dan manajemen inventaris",
+          "tags": ["Full-Stack", "API", "Database"],
+          "link": "https://github.com",
+          "image": ""
         },
         {
-          "title": "ProtectX",
-          "description": "Bot anti-crash Discord yang melindungi server dari serangan berbahaya",
-          "tags": ["Live ⇆"]
+          "title": "Aplikasi Chat Real-time",
+          "description": "Aplikasi chat berbasis WebSocket dengan autentikasi pengguna dan riwayat pesan",
+          "tags": ["WebSocket", "Real-time", "Backend"],
+          "link": "https://github.com",
+          "image": ""
         },
         {
-          "title": "Kahoot Answers Viewer",
-          "description": "Dapatkan jawaban untuk kuis kahoot Anda secara real-time",
-          "tags": ["Live ⇆"]
+          "title": "Aplikasi Mobile",
+          "description": "Aplikasi mobile lintas platform dibangun dengan React Native dan backend Firebase",
+          "tags": ["Mobile", "React Native", "Firebase"],
+          "link": "https://github.com",
+          "image": "mobile-app.png"
         },
         {
-          "title": "Proyek Empat",
-          "description": "Proyek tambahan dengan fitur menarik",
-          "tags": ["Pengembangan"]
-        },
-        {
-          "title": "Proyek Lima",
-          "description": "Proyek hebat lainnya untuk portofolio",
-          "tags": ["Perencanaan"]
-        },
-        {
-          "title": "Proyek Enam",
-          "description": "Proyek eksperimental yang mengeksplorasi teknologi baru",
-          "tags": ["Live ⇆", "Diarsipkan"]
+          "title": "API Gateway",
+          "description": "Gateway API microservices dengan autentikasi, pembatasan laju, dan pencatatan permintaan",
+          "tags": ["Microservices", "API", "DevOps"],
+          "link": "https://github.com",
+          "image": ""
         }
       ]
     },

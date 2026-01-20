@@ -61,34 +61,46 @@
       "description": "Here are some of my recent projects",
       "items": [
         {
-          "title": "ChertNodes",
-          "description": "Minecraft servers hosting platform with advanced management features",
-          "tags": ["Live ⇆", "Cached"]
+          "title": "EPL Football PWA",
+          "description": "A web platform featuring EPL teams. This site was created to learn Dicoding's PWA material and served as a submission project",
+          "tags": ["Live ⇆", "Cached", "Learning"],
+          "link": "https://github.com",
+          "image": "epl-football-pwa.png"
+        },
+         {
+           "title": "Next.js Portfolio",
+           "description": "Modern responsive portfolio website built with Next.js, React, TypeScript, and Tailwind CSS",
+           "tags": ["Production", "SSG", "TypeScript"],
+           "link": "https://github.com",
+           "image": ""
+         },
+        {
+          "title": "E-Commerce Platform",
+          "description": "Full-stack e-commerce solution with payment integration and inventory management",
+          "tags": ["Full-Stack", "API", "Database"],
+          "link": "https://github.com",
+          "image": ""
         },
         {
-          "title": "ProtectX",
-          "description": "Discord anti-crash bot that protects servers from malicious attacks",
-          "tags": ["Live ⇆"]
+          "title": "Real-time Chat App",
+          "description": "WebSocket-based chat application with user authentication and message history",
+          "tags": ["WebSocket", "Real-time", "Backend"],
+          "link": "https://github.com",
+          "image": ""
         },
         {
-          "title": "Kahoot Answers Viewer",
-          "description": "Get answers to your kahoot quiz in real-time",
-          "tags": ["Live ⇆"]
+          "title": "Mobile App",
+          "description": "Cross-platform mobile application built with React Native and Firebase backend",
+          "tags": ["Mobile", "React Native", "Firebase"],
+          "link": "https://github.com",
+          "image": "mobile-app.png"
         },
         {
-          "title": "Project Four",
-          "description": "Additional project with interesting features",
-          "tags": ["Development"]
-        },
-        {
-          "title": "Project Five",
-          "description": "Another awesome project for portfolio",
-          "tags": ["Planning"]
-        },
-        {
-          "title": "Project Six",
-          "description": "Experimental project exploring new technologies",
-          "tags": ["Live ⇆", "Archived"]
+          "title": "API Gateway",
+          "description": "Microservices API gateway with authentication, rate limiting, and request logging",
+          "tags": ["Microservices", "API", "DevOps"],
+          "link": "https://github.com",
+          "image": ""
         }
       ]
     },

@@ -1,5 +1,6 @@
 'use client';
 
+import Image from "next/image";
 import { useState } from "react";
 import { useTitleAnimation } from "@/app/hooks/useTitleAnimation";
 import { useI18n } from "@/app/contexts/I18nContext";
@@ -17,7 +18,16 @@ export default function ProjectsPage() {
   }
 
   const colorMap = ['bg-orange-600/20', 'bg-green-600/20', 'bg-purple-600/20', 'bg-blue-600/20', 'bg-indigo-600/20', 'bg-pink-600/20'];
-  const iconMap = ['CN', 'PX', 'KA', 'P4', 'P5', 'P6'];
+  
+  // Function to generate abbreviated title (first letters of words)
+  const getAbbreviatedTitle = (title: string) => {
+    return title
+      .split(' ')
+      .map(word => word[0])
+      .join('')
+      .toUpperCase()
+      .slice(0, 3);
+  };
 
   return (
     <main className="min-h-screen bg-dark-bg">
@@ -36,9 +46,22 @@ export default function ProjectsPage() {
                 href={project.link}
                 className="project-card group cursor-pointer"
               >
-                <div className={`${colorMap[idx]} h-24 sm:h-32 mb-4 flex items-center justify-center group-hover:brightness-110 transition`}>
-                   <span className="text-lg sm:text-2xl font-bold text-gray-300">{iconMap[idx]}</span>
+                {/* Image Container or Fallback Abbreviated Title */}
+                <div className={`${colorMap[idx % colorMap.length]} h-24 sm:h-32 mb-4 flex items-center justify-center group-hover:brightness-110 transition relative overflow-hidden`}>
+                  {project.image ? (
+                    <Image
+                      src={`/projects/${project.image}`}
+                      alt={project.title}
+                      fill
+                      className="object-cover"
+                    />
+                  ) : (
+                    <span className="text-lg sm:text-2xl font-bold text-gray-300 z-10">
+                      {getAbbreviatedTitle(project.title)}
+                    </span>
+                  )}
                 </div>
+                
                 <h3 className="text-base sm:text-xl font-semibold mb-2">{project.title}</h3>
                 <p className="text-gray-300 text-xs sm:text-sm mb-3 sm:mb-4">{project.description}</p>
                 <div className="flex flex-wrap gap-2">
