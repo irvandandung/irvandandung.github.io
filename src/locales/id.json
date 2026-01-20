@@ -22,27 +22,10 @@
         "text": "Bangun solusi yang dapat diskalakan, tulis kode yang bersih, buat produk yang cepat & aman",
         "author": "Muhamad Irvan Dandung"
       },
-      "projects": {
-        "title": "proyek",
-        "viewAll": "Lihat semua →",
-        "items": [
-          {
-            "title": "ChertNodes",
-            "description": "Platform hosting server Minecraft",
-            "tags": ["Live ⇆", "Tersimpan"]
-          },
-          {
-            "title": "ProtectX",
-            "description": "Bot anti-crash Discord",
-            "tags": ["Live ⇆"]
-          },
-          {
-            "title": "Kahoot Answers Viewer",
-            "description": "Dapatkan jawaban untuk kuis kahoot Anda",
-            "tags": ["Live ⇆"]
-          }
-        ]
-      },
+       "projects": {
+         "title": "proyek",
+         "viewAll": "Lihat semua →"
+       },
       "skills": {
         "title": "keterampilan",
         "languages": "Bahasa Pemrograman",

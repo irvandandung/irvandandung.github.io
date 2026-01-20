@@ -22,27 +22,10 @@
          "text": "Build scalable solutions, write clean code, make fast & secure products",
          "author": "Muhamad Irvan Dandung"
        },
-      "projects": {
-        "title": "projects",
-        "viewAll": "View all →",
-        "items": [
-          {
-            "title": "ChertNodes",
-            "description": "Minecraft servers hosting",
-            "tags": ["Live ⇆", "Cached"]
-          },
-          {
-            "title": "ProtectX",
-            "description": "Discord anti-crash bot",
-            "tags": ["Live ⇆"]
-          },
-          {
-            "title": "Kahoot Answers Viewer",
-            "description": "Get answers to your kahoot quiz",
-            "tags": ["Live ⇆"]
-          }
-        ]
-      },
+       "projects": {
+         "title": "projects",
+         "viewAll": "View all →"
+       },
        "skills": {
          "title": "skills",
          "languages": "Languages",

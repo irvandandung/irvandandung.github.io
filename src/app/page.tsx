@@ -53,7 +53,7 @@ export default function Page() {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
-            {t.pages.home.projects.items.map((project: any, idx: number) => (
+            {t.pages.projects.items.slice(0, 3).map((project: any, idx: number) => (
               <div key={idx} className="project-card">
                 <div className={`${['bg-orange-600/20', 'bg-green-600/20', 'bg-purple-600/20'][idx]} h-24 sm:h-32 mb-4 flex items-center justify-center`}>
                    <span className="text-lg sm:text-2xl font-bold text-gray-300">{['CN', 'PX', 'KA'][idx]}</span>
