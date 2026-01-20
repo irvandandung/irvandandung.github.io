@@ -108,24 +108,28 @@
         "items": {
           "education": [
             {
-              "title": "Self-taught & Online Learning",
-              "description": "Continuous Learning & Growth through online courses and certifications"
+              "title": "Mercubuana University",
+              "description": "Bachelor's Degree in Computer Science - Informatics Engineering"
             },
             {
-              "title": "Technologies & Skills",
-              "description": "PHP, Java, Kotlin, Go, TypeScript, React, Docker, Kubernetes, AWS, GCP"
+              "title": "SMK Telkom Purwokerto",
+              "description": "Vocational High School - Software Engineering"
+            },
+            {
+              "title": "Self-study & Online Courses",
+              "description": "Continuous learning and professional development through online courses and certifications, including the Dicoding Platform"
             }
           ],
           "experience": [
             {
-              "title": "Senior Software Developer",
+              "title": "Senior Backend Engineer - Dipay",
               "date": "2021 - Present",
-              "description": "Building scalable backend infrastructure and modern frontend applications"
+              "description": "Building scalable backend infrastructure for Dipay's digital payment services"
             },
             {
-              "title": "Full-Stack Development",
-              "date": "2021 - Present",
-              "description": "Multiple projects delivered across web and mobile platforms"
+              "title": "Programmer - SOMA Group",
+              "date": "2019 - 2021",
+              "description": "Worked on several projects involving web platforms and payment service APIs"
             }
           ]
         },

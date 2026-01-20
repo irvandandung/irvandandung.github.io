@@ -108,24 +108,28 @@
        "items": {
          "education": [
            {
-             "title": "Belajar Mandiri & Kursus Online",
-             "description": "Pembelajaran & Pengembangan Berkelanjutan melalui kursus online dan sertifikasi"
+             "title": "Mercubuana University",
+             "description": "Sarjana Komputer - Teknik Informatika"
            },
            {
-             "title": "Teknologi & Keterampilan",
-             "description": "PHP, Java, Kotlin, Go, TypeScript, React, Docker, Kubernetes, AWS, GCP"
+             "title": "SMK Telkom Purwokerto",
+             "description": "Rekayasa Perangkat Lunak"
+           },
+           {
+             "title": "Belajar Mandiri & Kursus Online",
+             "description": "Pembelajaran & Pengembangan Berkelanjutan melalui kursus online dan sertifikasi salah satunya lewat Dicoding Platform"
            }
          ],
          "experience": [
            {
-             "title": "Senior Software Developer",
+             "title": "Senior Backend Engineer - Dipay",
              "date": "2021 - Sekarang",
-             "description": "Membangun infrastruktur backend yang scalable dan aplikasi frontend modern"
+             "description": "Membangun infrastruktur backend yang scalable untuk layanan pembayaran digital produk Dipay"
            },
            {
-             "title": "Pengembangan Full-Stack",
-             "date": "2021 - Sekarang",
-             "description": "Beberapa proyek dikerjakan di platform web dan aplikasi mobile"
+             "title": "Programmer - SOMA Group",
+             "date": "2019 - 2021",
+             "description": "Beberapa proyek dikerjakan di platform web dan API layanan pembayaran"
            }
          ]
        },
