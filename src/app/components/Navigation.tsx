@@ -54,7 +54,10 @@ export function Navigation({ mobileMenuOpen, setMobileMenuOpen }: NavigationProp
       <nav className="fixed top-0 right-0 left-0 z-50 backdrop-blur-sm bg-dark-bg/95 border-b border-dark-tertiary">
         <div className="max-w-7xl mx-auto px-4 md:px-6 py-4 flex justify-between items-center">
           <Link href="/" className="text-lg md:text-xl font-bold text-primary hover:text-primary-light flex items-center gap-2">
-            <span>⚫</span> <span className="hidden sm:inline">MID</span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-purple-400 to-primary-light font-bold text-lg md:text-xl">
+              &lt;d&gt;
+            </span>
+            <span className="hidden sm:inline">MID</span>
           </Link>
 
           {/* Desktop Navigation */}

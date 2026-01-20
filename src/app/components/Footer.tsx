@@ -14,7 +14,9 @@ export function Footer() {
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col sm:flex-row justify-between items-center gap-4 text-center sm:text-left text-sm sm:text-base flex-wrap">
           <div className="flex items-center gap-2 justify-center sm:justify-start">
-            <span>⚫</span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-purple-400 to-primary-light font-bold text-base sm:text-lg">
+              &lt;d&gt;
+            </span>
             <p className="text-white font-semibold">
               {t.footer.email}
             </p>
