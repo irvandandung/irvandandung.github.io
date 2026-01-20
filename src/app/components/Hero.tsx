@@ -40,9 +40,12 @@ export function Hero() {
             {t.pages.home.hero.description}
           </p>
 
-          <button className="px-4 sm:px-6 py-2 border border-primary text-primary hover:bg-primary/10 transition text-sm sm:text-base">
+          <a
+            href="mailto:irvandandung1@gmail.com"
+            className="inline-block px-4 sm:px-6 py-2 border border-primary text-primary hover:bg-primary/10 transition text-sm sm:text-base"
+          >
             {t.pages.home.hero.cta}
-          </button>
+          </a>
 
           <div className="pt-2 sm:pt-4">
             <div className="badge inline-flex items-center gap-2">
