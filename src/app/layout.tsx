@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   description: "3+ years of experience building scalable infrastructure and creating fast, secure applications",
   metadataBase: new URL("https://irvandandung.github.io"),
   icons: {
-    icon: "/favicon.svg?v=3",
+    icon: "/favicon.svg?v=4",
   },
   openGraph: {
     title: "Muhamad Irvan Dandung — Full-Stack Developer",

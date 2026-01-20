@@ -1,5 +1,6 @@
 'use client';
 
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { useTitleAnimation } from "./hooks/useTitleAnimation";
@@ -19,6 +20,18 @@ export default function Page() {
   if (!isReady || !t) {
     return null;
   }
+
+  // Function to generate abbreviated title (first letters of words)
+  const getAbbreviatedTitle = (title: string) => {
+    return title
+      .split(' ')
+      .map(word => word[0])
+      .join('')
+      .toUpperCase()
+      .slice(0, 3);
+  };
+
+  const colorMap = ['bg-orange-600/20', 'bg-green-600/20', 'bg-purple-600/20', 'bg-blue-600/20', 'bg-indigo-600/20', 'bg-pink-600/20'];
 
   return (
     <main className="min-h-screen bg-dark-bg">
@@ -42,36 +55,52 @@ export default function Page() {
         </div>
       </section>
 
-      {/* Projects Section */}
-      <section id="projects" className="py-12 sm:py-20 px-4 sm:px-6 md:pl-20">
-        <div className="max-w-7xl mx-auto">
-          <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-8 sm:mb-12">
-            <h2 className="section-title mb-0 text-2xl sm:text-3xl">{t.pages.home.projects.title}</h2>
-            <Link href="/projects" className="text-primary hover:text-primary-light text-xs sm:text-sm whitespace-nowrap">
-              {t.pages.home.projects.viewAll}
-            </Link>
-          </div>
+       {/* Projects Section */}
+       <section id="projects" className="py-12 sm:py-20 px-4 sm:px-6 md:pl-20">
+         <div className="max-w-7xl mx-auto">
+           <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-8 sm:mb-12">
+             <h2 className="section-title mb-0 text-2xl sm:text-3xl">{t.pages.home.projects.title}</h2>
+             <Link href="/projects" className="text-primary hover:text-primary-light text-xs sm:text-sm whitespace-nowrap">
+               {t.pages.home.projects.viewAll}
+             </Link>
+           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
-            {t.pages.projects.items.slice(0, 3).map((project: any, idx: number) => (
-              <div key={idx} className="project-card">
-                <div className={`${['bg-orange-600/20', 'bg-green-600/20', 'bg-purple-600/20'][idx]} h-24 sm:h-32 mb-4 flex items-center justify-center`}>
-                   <span className="text-lg sm:text-2xl font-bold text-gray-300">{['CN', 'PX', 'KA'][idx]}</span>
-                </div>
-                <h3 className="text-base sm:text-xl font-semibold mb-2">{project.title}</h3>
-                <p className="text-gray-300 text-xs sm:text-sm mb-3 sm:mb-4">{project.description}</p>
-                <div className="flex flex-wrap gap-2">
-                   {project.tags.map((tag: string, i: number) => (
-                     <span key={i} className="badge">
-                       {tag}
+           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+             {t.pages.projects.items.slice(0, 3).map((project: any, idx: number) => (
+               <a
+                 key={idx}
+                 href={project.link}
+                 className="project-card group cursor-pointer"
+               >
+                 {/* Image Container or Fallback Abbreviated Title */}
+                 <div className={`${colorMap[idx % colorMap.length]} h-24 sm:h-32 mb-4 flex items-center justify-center group-hover:brightness-110 transition relative overflow-hidden`}>
+                   {project.image ? (
+                     <Image
+                       src={`/projects/${project.image}`}
+                       alt={project.title}
+                       fill
+                       className="object-cover"
+                     />
+                   ) : (
+                     <span className="text-lg sm:text-2xl font-bold text-gray-300 z-10">
+                       {getAbbreviatedTitle(project.title)}
                      </span>
-                   ))}
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+                   )}
+                 </div>
+                 <h3 className="text-base sm:text-xl font-semibold mb-2">{project.title}</h3>
+                 <p className="text-gray-300 text-xs sm:text-sm mb-3 sm:mb-4">{project.description}</p>
+                 <div className="flex flex-wrap gap-2">
+                    {project.tags.map((tag: string, i: number) => (
+                      <span key={i} className="badge">
+                        {tag}
+                      </span>
+                    ))}
+                 </div>
+               </a>
+             ))}
+           </div>
+         </div>
+       </section>
 
       {/* Skills Section */}
       <section className="py-12 sm:py-20 px-4 sm:px-6 md:pl-20">
