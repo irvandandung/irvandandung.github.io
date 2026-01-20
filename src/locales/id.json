@@ -61,46 +61,39 @@
       "description": "Berikut adalah beberapa proyek terbaru saya",
       "items": [
         {
+          "title": "SOMA Web Profile",
+          "description": "Platform Web SOMA Product, proyek revamp design baru website yang saya kerjakan bersama beberapa rekan saya saat bekerja di Soma Group",
+          "tags": ["Live ⇆", "Kolaborasi", "WordPress"],
+          "link": "https://www.soma-inc.com/",
+          "image": "Revamp Soma Web Profile.png"
+        },
+        {
+          "title": "Dipay Open API",
+          "description": "Open API Dipay yang diperuntukan untuk partner yang ingin mengintegrasikan sistem mereka dengan platform pembayaran via Dipay baik transfer sesama, transfer bank, & QRIS",
+          "tags": ["Live ⇆", "API", "Kolaborasi"],
+          "link": "https://dipay.id/documentation",
+          "image": ""
+        },
+        {
+          "title": "Pay2u Web Profile",
+          "description": "Platform Web Pay2u Product, proyek revamp design baru website yang saya kerjakan bersama beberapa rekan saya saat bekerja di Soma Group",
+          "tags": ["Live ⇆", "Kolaborasi", "WordPress"],
+          "link": "https://pay2u.co.id/",
+          "image": "Revamp Pay2u Web Profile.png"
+        },
+        {
+          "title": "Kasku Web Profile",
+          "description": "Platform Web Kasku Product, proyek revamp design baru website yang saya kerjakan bersama beberapa rekan saya saat bekerja di Soma Group",
+          "tags": ["Live ⇆", "Kolaborasi", "WordPress"],
+          "link": "https://kasku.co.id/",
+          "image": "Revamp Kasku Web Profile.png"
+        },
+        {
           "title": "EPL Football PWA",
           "description": "Platform web berisikan tim EPL, website ini dibuat untuk belajar di dicoding materi pwa dimana ini dijadikan sebagai proyek submission",
           "tags": ["Live ⇆", "Tersimpan", "Belajar"],
-          "link": "https://github.com",
+          "link": "https://irvandandung.github.io/football-info-pwa/",
           "image": "epl-football-pwa.png"
-        },
-         {
-           "title": "Next.js Portfolio",
-           "description": "Website portfolio responsif modern dibangun dengan Next.js, React, TypeScript, dan Tailwind CSS",
-           "tags": ["Production", "SSG", "TypeScript"],
-           "link": "https://github.com",
-           "image": ""
-         },
-        {
-          "title": "Platform E-Commerce",
-          "description": "Solusi e-commerce full-stack dengan integrasi pembayaran dan manajemen inventaris",
-          "tags": ["Full-Stack", "API", "Database"],
-          "link": "https://github.com",
-          "image": ""
-        },
-        {
-          "title": "Aplikasi Chat Real-time",
-          "description": "Aplikasi chat berbasis WebSocket dengan autentikasi pengguna dan riwayat pesan",
-          "tags": ["WebSocket", "Real-time", "Backend"],
-          "link": "https://github.com",
-          "image": ""
-        },
-        {
-          "title": "Aplikasi Mobile",
-          "description": "Aplikasi mobile lintas platform dibangun dengan React Native dan backend Firebase",
-          "tags": ["Mobile", "React Native", "Firebase"],
-          "link": "https://github.com",
-          "image": "mobile-app.png"
-        },
-        {
-          "title": "API Gateway",
-          "description": "Gateway API microservices dengan autentikasi, pembatasan laju, dan pencatatan permintaan",
-          "tags": ["Microservices", "API", "DevOps"],
-          "link": "https://github.com",
-          "image": ""
         }
       ]
     },

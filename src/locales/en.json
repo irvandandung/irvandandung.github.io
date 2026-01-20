@@ -61,46 +61,39 @@
       "description": "Here are some of my recent projects",
       "items": [
         {
+          "title": "SOMA Web Profile",
+          "description": "SOMA product web platform — a website redesign project I worked on with colleagues while at Soma Group",
+          "tags": ["Live ⇆", "Collaboration", "WordPress"],
+          "link": "https://www.soma-inc.com/",
+          "image": "Revamp Soma Web Profile.png"
+        },
+        {
+          "title": "Dipay Open API",
+          "description": "Dipay Open API designed for partners to integrate their systems with the Dipay payment platform, supporting peer transfers, bank transfers, and QRIS",
+          "tags": ["Live ⇆", "API", "Collaboration"],
+          "link": "https://dipay.id/documentation",
+          "image": ""
+        },
+        {
+          "title": "Pay2u Web Profile",
+          "description": "Pay2u product web platform — a website redesign project I worked on with colleagues while at Soma Group",
+          "tags": ["Live ⇆", "Collaboration", "WordPress"],
+          "link": "https://pay2u.co.id/",
+          "image": "Revamp Pay2u Web Profile.png"
+        },
+        {
+          "title": "Kasku Web Profile",
+          "description": "Kasku product web platform — a website redesign project I worked on with colleagues while at Soma Group",
+          "tags": ["Live ⇆", "Collaboration", "WordPress"],
+          "link": "https://kasku.co.id/",
+          "image": "Revamp Kasku Web Profile.png"
+        },
+        {
           "title": "EPL Football PWA",
           "description": "A web platform featuring EPL teams. This site was created to learn Dicoding's PWA material and served as a submission project",
           "tags": ["Live ⇆", "Cached", "Learning"],
           "link": "https://github.com",
           "image": "epl-football-pwa.png"
-        },
-         {
-           "title": "Next.js Portfolio",
-           "description": "Modern responsive portfolio website built with Next.js, React, TypeScript, and Tailwind CSS",
-           "tags": ["Production", "SSG", "TypeScript"],
-           "link": "https://github.com",
-           "image": ""
-         },
-        {
-          "title": "E-Commerce Platform",
-          "description": "Full-stack e-commerce solution with payment integration and inventory management",
-          "tags": ["Full-Stack", "API", "Database"],
-          "link": "https://github.com",
-          "image": ""
-        },
-        {
-          "title": "Real-time Chat App",
-          "description": "WebSocket-based chat application with user authentication and message history",
-          "tags": ["WebSocket", "Real-time", "Backend"],
-          "link": "https://github.com",
-          "image": ""
-        },
-        {
-          "title": "Mobile App",
-          "description": "Cross-platform mobile application built with React Native and Firebase backend",
-          "tags": ["Mobile", "React Native", "Firebase"],
-          "link": "https://github.com",
-          "image": "mobile-app.png"
-        },
-        {
-          "title": "API Gateway",
-          "description": "Microservices API gateway with authentication, rate limiting, and request logging",
-          "tags": ["Microservices", "API", "DevOps"],
-          "link": "https://github.com",
-          "image": ""
         }
       ]
     },
