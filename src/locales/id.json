@@ -5,7 +5,7 @@
     "about": "tentang-saya"
   },
   "nav": {
-    "contactMe": "Hubungi saya !!"
+    "contactMe": "Email saya ke irvandandung1@gmail.com"
   },
   "pages": {
     "home": {
@@ -15,7 +15,7 @@
         "title3": "",
         "title4": "",
         "description": "3+ tahun pengalaman membangun infrastruktur yang dapat diskalakan dan membuat aplikasi web dan mobile yang cepat serta aman",
-        "cta": "Hubungi saya !!",
+        "cta": "Email saya ke irvandandung1@gmail.com",
         "status": "Saat ini tersedia untuk peluang baru"
       },
       "quote": {
@@ -103,7 +103,7 @@
        "bio1": "Saya adalah Senior Software Developer dengan 3+ tahun pengalaman profesional. Saya spesialis dalam membangun infrastruktur yang scalable dan membuat aplikasi yang cepat, aman di berbagai platform.",
        "bio2": "Keahlian saya mencakup pengembangan full-stack dengan fondasi yang kuat di teknologi backend (PHP, Java, Kotlin, Go) dan frontend (TypeScript, React). Saya mahir dalam containerization (Docker, Kubernetes) dan platform cloud (AWS, GCP).",
        "bio3": "Saya bersemangat dalam menulis kode yang bersih, menerapkan prinsip OOP, dan membangun solusi struktur data yang efisien. Ketika tidak coding, saya senang mengeksplorasi teknologi baru dan berkontribusi pada komunitas developer.",
-       "downloadResume": "Unduh Resume →",
+       "downloadResume": "Lihat resume (external link) →",
        "education": "Pendidikan",
        "items": {
          "education": [

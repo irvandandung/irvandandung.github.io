@@ -5,7 +5,7 @@
     "about": "about-me"
   },
   "nav": {
-    "contactMe": "Contact me !!"
+    "contactMe": "Email me at irvandandung1@gmail.com"
   },
   "pages": {
     "home": {
@@ -15,7 +15,7 @@
          "title3": "",
          "title4": "",
          "description": "3+ years of experience building scalable infrastructure and creating fast, secure websites and mobile applications",
-         "cta": "Contact me !!",
+         "cta": "Email me at irvandandung1@gmail.com",
          "status": "Currently available for opportunities"
        },
        "quote": {
@@ -103,7 +103,7 @@
         "bio1": "I'm a Senior Software Developer with 3+ years of professional experience. I specialize in building scalable infrastructure and creating fast, secure applications across multiple platforms.",
         "bio2": "My expertise spans full-stack development with strong fundamentals in both backend (PHP, Java, Kotlin, Go) and frontend (TypeScript, React) technologies. I'm proficient with containerization (Docker, Kubernetes) and cloud platforms (AWS, GCP).",
         "bio3": "I'm passionate about writing clean code, following OOP principles, and building data structure-efficient solutions. When I'm not coding, I enjoy exploring new technologies and contributing to the developer community.",
-        "downloadResume": "Download Resume →",
+        "downloadResume": "View resume (external link) →",
         "education": "Education",
         "items": {
           "education": [
